@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/OptiTunes.App/OptiTunes.App.csproj" />
+    <Project Path="src/OptiTunes.Core/OptiTunes.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OptiTunes.Tests/OptiTunes.Tests.csproj" />
+  </Folder>
+</Solution>
