@@ -1,0 +1,48 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--
+        Logo OptiTunes (vectoriel, 256 × 256) : une remorque vue de côté dont le chargement est optimisé
+        (blocs aux couleurs du thème, emboîtés sans vide), cabine à droite.
+    -->
+    <DrawingImage x:Key="LogoImage">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <!-- Fond arrondi -->
+                <GeometryDrawing Geometry="M56,0 H200 A56,56 0 0 1 256,56 V200 A56,56 0 0 1 200,256 H56 A56,56 0 0 1 0,200 V56 A56,56 0 0 1 56,0 Z">
+                    <GeometryDrawing.Brush>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#3E6A8F" Offset="0" />
+                            <GradientStop Color="#22313F" Offset="1" />
+                        </LinearGradientBrush>
+                    </GeometryDrawing.Brush>
+                </GeometryDrawing>
+
+                <!-- Chargement : blocs emboîtés -->
+                <GeometryDrawing Brush="#5DADE2" Geometry="M40,110 H104 V178 H40 Z" />
+                <GeometryDrawing Brush="#2ECC71" Geometry="M110,138 H160 V178 H110 Z" />
+                <GeometryDrawing Brush="#F39C12" Geometry="M110,92 H160 V132 H110 Z" />
+                <GeometryDrawing Brush="#AED6F1" Geometry="M40,72 H104 V104 H40 Z" />
+
+                <!-- Caisse de la remorque -->
+                <GeometryDrawing Geometry="M30,62 H170 V188 H30 Z">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="White" Thickness="11" LineJoin="Round" />
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+
+                <!-- Cabine -->
+                <GeometryDrawing Brush="White" Geometry="M180,104 H208 Q222,104 228,118 L236,142 V188 H180 Z" />
+                <GeometryDrawing Brush="#2C4A63" Geometry="M192,116 H208 Q214,116 217,124 L222,140 H192 Z" />
+
+                <!-- Roues -->
+                <GeometryDrawing Brush="White" Geometry="M76,206 m-18,0 a18,18 0 1 0 36,0 a18,18 0 1 0 -36,0" />
+                <GeometryDrawing Brush="White" Geometry="M124,206 m-18,0 a18,18 0 1 0 36,0 a18,18 0 1 0 -36,0" />
+                <GeometryDrawing Brush="White" Geometry="M210,206 m-18,0 a18,18 0 1 0 36,0 a18,18 0 1 0 -36,0" />
+                <GeometryDrawing Brush="#22313F" Geometry="M76,206 m-7,0 a7,7 0 1 0 14,0 a7,7 0 1 0 -14,0" />
+                <GeometryDrawing Brush="#22313F" Geometry="M124,206 m-7,0 a7,7 0 1 0 14,0 a7,7 0 1 0 -14,0" />
+                <GeometryDrawing Brush="#22313F" Geometry="M210,206 m-7,0 a7,7 0 1 0 14,0 a7,7 0 1 0 -14,0" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+</ResourceDictionary>

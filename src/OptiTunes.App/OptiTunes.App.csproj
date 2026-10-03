@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\OptiTunes.Core\OptiTunes.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="HelixToolkit.Wpf" Version="3.1.2" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <Version>0.0.5</Version>
+    <InformationalVersion>0.0.5</InformationalVersion>
+    <AssemblyName>OptiTunes</AssemblyName>
+    <RootNamespace>OptiTunes.App</RootNamespace>
+    <Title>OptiTunes</Title>
+    <ApplicationIcon>Assets\OptiTunes.ico</ApplicationIcon>
+    <NoWarn>$(NoWarn);WPF0001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\OptiTunes.ico" />
+    <Resource Include="Assets\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\samples\*.csv" Link="Samples\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
