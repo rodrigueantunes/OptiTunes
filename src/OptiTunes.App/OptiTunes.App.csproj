@@ -15,8 +15,8 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <Version>0.0.5</Version>
-    <InformationalVersion>0.0.5</InformationalVersion>
+    <Version>0.0.7</Version>
+    <InformationalVersion>0.0.7</InformationalVersion>
     <AssemblyName>OptiTunes</AssemblyName>
     <RootNamespace>OptiTunes.App</RootNamespace>
     <Title>OptiTunes</Title>

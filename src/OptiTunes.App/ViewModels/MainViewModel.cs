@@ -781,6 +781,8 @@ public partial class MainViewModel : ObservableObject
             Loads.Add(new LoadViewModel(load));
         }
 
+        SetCalculation(CalculationDetails.Build(plan, solution.Report, Solutions.Select(x => x.Plan).ToList()));
+
         SelectedLoad = Loads.FirstOrDefault();
 
         foreach (var name in new[]
@@ -838,6 +840,7 @@ public partial class MainViewModel : ObservableObject
     {
         Solutions.Clear();
         SelectedSolution = null;
+        SetCalculation([]);
         Loads.Clear();
         Orders.Clear();
         Units.Clear();
@@ -1148,6 +1151,46 @@ public partial class MainViewModel : ObservableObject
 
         File.WriteAllText(path, PlanExporter.ToCsv(Plan), new UTF8Encoding(true));
         Status = $"Plan exporté : {path}";
+    }
+
+    // ---------- Détail du calcul ----------
+
+    /// <summary>Explication pas à pas de la solution affichée, avec les chiffres (onglet « Détail du calcul »).</summary>
+    public IReadOnlyList<DetailSection> CalculationSections { get; private set; } = [];
+
+    /// <summary>Étapes affichées, blocs par ordre repliables (ouverts par défaut).</summary>
+    public IReadOnlyList<DetailSectionViewModel> CalculationView { get; private set; } = [];
+
+    public bool HasCalculation => CalculationSections.Count > 0;
+
+    [ObservableProperty] private DetailSectionViewModel? _selectedCalculationSection;
+
+    private void SetCalculation(IReadOnlyList<DetailSection> sections)
+    {
+        CalculationSections = sections;
+        CalculationView = sections.Select(s => new DetailSectionViewModel(s)).ToList();
+        OnPropertyChanged(nameof(CalculationSections));
+        OnPropertyChanged(nameof(CalculationView));
+        OnPropertyChanged(nameof(HasCalculation));
+    }
+
+    [RelayCommand]
+    private void CopyCalculation()
+    {
+        if (!HasCalculation)
+        {
+            return;
+        }
+
+        try
+        {
+            System.Windows.Clipboard.SetText(CalculationDetails.ToText(CalculationSections));
+            ShowToast("Détail du calcul copié : il peut être collé dans un courriel ou un document.", IssueSeverity.Info);
+        }
+        catch (Exception ex)
+        {
+            ShowToast($"Copie impossible : {ex.Message}", IssueSeverity.Error);
+        }
     }
 
     /// <summary>Modèle d'import complet (toutes les colonnes, 1 groupage + 2 ordres d'exemple).</summary>

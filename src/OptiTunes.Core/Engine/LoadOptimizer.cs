@@ -49,7 +49,18 @@ public sealed class LoadOptimizer
     public IReadOnlyList<LoadPlan> OptimizeSolutions(Groupage groupage, PackingOptions? options = null)
     {
         var opts = options ?? new PackingOptions();
-        var greedy = Build(groupage, opts, "Meilleure par camion", (v, units, log) => PackBest(v, units, opts, log));
+        var greedy = Build(groupage, opts, "Meilleure par camion", (v, units, log) => PackBest(v, units, opts, log, refine: true));
+        if (opts.MultiStrategy && groupage.IsComputable)
+        {
+            // Garantie : jamais moins bon que le calcul sans affinage (18 façons, rangées imposées à tous les ordres).
+            // Affiner un camion peut par exemple déplacer le reste vers les camions suivants.
+            var plain = Build(groupage, opts, "Meilleure par camion", (v, units, log) => PackBest(v, units, opts, log, refine: false));
+            if (Rank(plain).CompareTo(Rank(greedy)) < 0)
+            {
+                greedy = plain;
+            }
+        }
+
         if (!groupage.IsComputable || !opts.MultiStrategy)
         {
             greedy.IsRecommended = true;
@@ -64,7 +75,7 @@ public sealed class LoadOptimizer
             var name = RunName(strategy, mode);
             alternatives[i] = Build(groupage, opts, name, (v, units, log) =>
             {
-                var r = Pack(v, strategy.Sort(units).ToList(), opts, mode);
+                var r = Pack(v, strategy.Sort(units).ToList(), opts, mode, pinAll: true);
                 r.Strategy = name;
                 log.Add(new StrategyOutcome(name, r.Placed.Count, r.Placed.Sum(p => p.Unit.ItemCount),
                     r.Placed.Sum(p => p.Unit.Volume) / 1e9, r.MaxX / 1000, CompleteOrders(r)));
@@ -87,11 +98,11 @@ public sealed class LoadOptimizer
     }
 
     /// <summary>Clé de tri : reliquat, nombre de camions, métrage réel total, ordres scindés entre camions, ordres incomplets.</summary>
-    private static (int, int, double, int, int) Rank(LoadPlan p) =>
+    private static (int, int, int, double, int) Rank(LoadPlan p) =>
         (p.Metrics.ItemsRemaining, p.Loads.Count,
+         p.Groupage.Orders.Count(o => p.RemainingItems(o) > 0),
          Math.Round(p.Metrics.LinearMetersReal, 1),
-         p.Groupage.Orders.Count(o => p.VehiclesOf(o).Count > 1),
-         p.Groupage.Orders.Count(o => p.RemainingItems(o) > 0));
+         p.Groupage.Orders.Count(o => p.VehiclesOf(o).Count > 1));
 
     private static string Signature(LoadPlan p) =>
         string.Join("|", p.Placements.OrderBy(x => x.Unit.Id)
@@ -199,15 +210,26 @@ public sealed class LoadOptimizer
     }
 
     /// <summary>Remplit un camion : chaque combinaison (tri × mode) en parallèle, choix déterministe du meilleur.</summary>
-    private static PackResult PackBest(Vehicle vehicle, List<PhysicalUnit> units, PackingOptions options, List<StrategyOutcome> log)
+    private static PackResult PackBest(Vehicle vehicle, List<PhysicalUnit> units, PackingOptions options, List<StrategyOutcome> log,
+        bool refine = true)
     {
         var runs = options.MultiStrategy ? AllRuns().ToArray() : [(Strategies[0], PackMode.Walls)];
+        var legacy = !refine;
+
+        // Charge utile dépassée : les ordres les plus légers d'abord chargent le plus d'ordres complets possible.
+        if (options.MultiStrategy && refine && units.Sum(u => u.Weight) > vehicle.MaxPayload + Geometry.Eps)
+        {
+            var orderWeight = units.GroupBy(u => u.Order).ToDictionary(g => g.Key, g => g.Sum(u => u.Weight));
+            var light = new Strategy("Ordres légers d'abord (charge utile)", s => Base(s)
+                .ThenBy(u => orderWeight.GetValueOrDefault(u.Order)).ThenBy(u => u.Order.Id).ThenBy(u => u.Index));
+            runs = [.. runs, (light, PackMode.Walls), (light, PackMode.Columns), (light, PackMode.Rows)];
+        }
 
         var results = new PackResult[runs.Length];
         Parallel.For(0, runs.Length, i =>
         {
             var (strategy, mode) = runs[i];
-            results[i] = Pack(vehicle, strategy.Sort(units).ToList(), options, mode);
+            results[i] = Pack(vehicle, strategy.Sort(units).ToList(), options, mode, legacy);
             results[i].Strategy = RunName(strategy, mode);
         });
 
@@ -223,8 +245,141 @@ public sealed class LoadOptimizer
             }
         }
 
+        if (!options.MultiStrategy || !refine)
+        {
+            return best!;
+        }
+
+        // Affinage à partir du meilleur résultat de chaque mode (parois, colonnes, rangées) : la meilleure
+        // disposition finale vient souvent d'un autre mode que le meilleur de départ.
+        var starts = results.GroupBy(r => r.Mode)
+            .OrderBy(g => g.Key)
+            .Select(g => g.Aggregate((a, b) => IsBetter(b, a) ? b : a))
+            .ToArray();
+        var refined = new PackResult[starts.Length];
+        Parallel.For(0, starts.Length, i => refined[i] = Improve(vehicle, starts[i], options));
+        foreach (var r in refined)
+        {
+            if (IsBetter(r, best!))
+            {
+                best = r;
+            }
+        }
+
         return best!;
     }
+
+    /// <summary>
+    /// Recherche locale après les 18 façons : la meilleure séquence est légèrement modifiée (échange ou déplacement
+    /// d'unités de même étape, zone et contrainte sol / sommet, donc sans toucher au rangement), puis rechargée.
+    /// Une modification n'est gardée que si le camion n'est pas moins bon ; le meilleur résultat rencontré est retenu.
+    /// Nombre d'essais fixe et tirage à graine fixe : le même fichier donne toujours le même plan.
+    /// </summary>
+    private static PackResult Improve(Vehicle vehicle, PackResult start, PackingOptions options)
+    {
+        var sequence = start.Sequence;
+        var groups = new List<(int Start, int End)>();
+        for (var i = 0; i < sequence.Count;)
+        {
+            var j = i;
+            while (j + 1 < sequence.Count && SameRank(sequence[i], sequence[j + 1]))
+            {
+                j++;
+            }
+
+            if (j > i && sequence.Skip(i).Take(j - i + 1).Select(u => u.ShapeKey).Distinct().Count() > 1)
+            {
+                groups.Add((i, j));
+            }
+
+            i = j + 1;
+        }
+
+        // Ordres dont le sens de pose peut changer (longueur dans le sens du camion ou en travers).
+        var turnable = sequence.Select(u => u.Order).Distinct()
+            .Where(o => sequence.First(u => u.Order == o) is var u && u.Orientations.Contains(1) && u.Orientations.Contains(2) &&
+                        Math.Abs(u.A - u.B) > Geometry.Eps)
+            .ToList();
+        if (groups.Count == 0 && turnable.Count == 0)
+        {
+            return start;
+        }
+
+        // Effort proportionnel à la taille : un rechargement coûte environ n², le calcul reste fluide.
+        var iterations = Math.Clamp(800_000 / Math.Max(1, sequence.Count * sequence.Count), 25, 250);
+        var random = new Random(20260707);
+        var current = start;
+        var best = start;
+        for (var k = 0; k < iterations; k++)
+        {
+            if (turnable.Count > 0 && (groups.Count == 0 || random.Next(3) == 0))
+            {
+                // Sens de pose d'un ordre : libre, imposé en long ou imposé en travers.
+                var order = turnable[random.Next(turnable.Count)];
+                var pins = new Dictionary<TransportOrder, int>(current.Pins ?? new Dictionary<TransportOrder, int>());
+                var now = pins.GetValueOrDefault(order);
+                var choice = (now + 1 + random.Next(2)) % 3;
+                if (choice == 0)
+                {
+                    pins.Remove(order);
+                }
+                else
+                {
+                    pins[order] = choice;
+                }
+
+                Accept(Pack(vehicle, current.Sequence, options, current.Mode, pins: pins));
+                continue;
+            }
+
+            var (from, to) = groups[random.Next(groups.Count)];
+            var a = random.Next(from, to + 1);
+            var b = random.Next(from, to + 1);
+            if (a == b || current.Sequence[a].ShapeKey == current.Sequence[b].ShapeKey)
+            {
+                continue;
+            }
+
+            var next = new List<PhysicalUnit>(current.Sequence);
+            if (random.Next(2) == 0)
+            {
+                (next[a], next[b]) = (next[b], next[a]);
+            }
+            else
+            {
+                var unit = next[b];
+                next.RemoveAt(b);
+                next.Insert(a, unit);
+            }
+
+            Accept(Pack(vehicle, next, options, current.Mode, pins: current.Pins ?? new Dictionary<TransportOrder, int>()));
+        }
+
+        if (!ReferenceEquals(best, start))
+        {
+            best.Strategy = start.Strategy + " · affinée";
+        }
+
+        return best;
+
+        void Accept(PackResult candidate)
+        {
+            candidate.Strategy = start.Strategy;
+            if (!IsBetter(current, candidate))
+            {
+                current = candidate;
+                if (IsBetter(candidate, best))
+                {
+                    best = candidate;
+                }
+            }
+        }
+    }
+
+    /// <summary>Même clé de rangement : étapes, zone, contraintes sol / sommet (tri de base de toutes les stratégies).</summary>
+    private static bool SameRank(PhysicalUnit a, PhysicalUnit b) =>
+        a.Departure == b.Departure && a.GroupRank == b.GroupRank && a.Arrival == b.Arrival &&
+        a.MustBeOnTop == b.MustBeOnTop && a.MustBeOnFloor == b.MustBeOnFloor;
 
     private static IOrderedEnumerable<PhysicalUnit> Base(IEnumerable<PhysicalUnit> units) =>
         // Chargé plus tôt au fond, zone de rangement, livré plus tard au fond (0 = sans arrêt, côté porte).
@@ -271,16 +426,27 @@ public sealed class LoadOptimizer
     private sealed class PackResult
     {
         public string Strategy { get; set; } = "";
+
+        /// <summary>Ordre de présentation des unités et mode de remplissage qui ont donné ce résultat.</summary>
+        public List<PhysicalUnit> Sequence { get; init; } = [];
+
+        public PackMode Mode { get; init; }
+
+        /// <summary>Sens de pose imposé par ordre (null : aucun).</summary>
+        public IReadOnlyDictionary<TransportOrder, int>? Pins { get; init; }
         public List<Placement> Placed { get; } = [];
         public List<UnloadedUnit> Unloaded { get; } = [];
         public double MaxX => Placed.Count == 0 ? 0 : Placed.Max(p => p.MaxX);
     }
 
-    private static PackResult Pack(Vehicle v, List<PhysicalUnit> units, PackingOptions options, PackMode mode)
+    /// <param name="pinAll">Mode rangées : sens de pose imposé à tous les ordres (calcul sans affinage), sinon seulement aux ordres de plusieurs piles.</param>
+    /// <param name="pins">Sens de pose imposés (affinage) ; remplace celui du mode rangées.</param>
+    private static PackResult Pack(Vehicle v, List<PhysicalUnit> units, PackingOptions options, PackMode mode, bool pinAll = false,
+        IReadOnlyDictionary<TransportOrder, int>? pins = null)
     {
-        var pinned = mode == PackMode.Rows ? RowOrientations(units, options.UsableSpace(v), options.GapBetweenUnits) : null;
+        var pinned = pins ?? (mode == PackMode.Rows ? RowOrientations(units, options.UsableSpace(v), options.GapBetweenUnits, pinAll) : null);
         var state = new PackingState(v, options, mode == PackMode.Columns, pinned);
-        var result = new PackResult();
+        var result = new PackResult { Sequence = units, Mode = mode, Pins = pinned };
         var failed = new Dictionary<string, RejectReason>();
 
         foreach (var unit in units)
@@ -321,12 +487,13 @@ public sealed class LoadOptimizer
     /// Sens de pose qui minimise le métrage par rangées de chaque ordre (ex. palettes 1995 × 1200 : deux de front
     /// dans la longueur plutôt qu'une seule en travers). Le placement unité par unité ne le voit pas seul.
     /// </summary>
-    private static Dictionary<TransportOrder, int> RowOrientations(List<PhysicalUnit> units, Vehicle v, double gap)
+    private static Dictionary<TransportOrder, int> RowOrientations(List<PhysicalUnit> units, Vehicle v, double gap, bool pinAll)
     {
         var map = new Dictionary<TransportOrder, int>();
         foreach (var group in units.GroupBy(u => u.Order))
         {
-            if (LinearMeterCalculator.ForUnits(group.ToList(), v, gap) is { } ml)
+            // Une seule pile : pas de rangée à organiser, l'unité reste libre de pivoter pour combler un vide.
+            if (LinearMeterCalculator.ForUnits(group.ToList(), v, gap) is { } ml && (pinAll || ml.Stacks > 1))
             {
                 map[group.Key] = ml.BestOrientation;
             }

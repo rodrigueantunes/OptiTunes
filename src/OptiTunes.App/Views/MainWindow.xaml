@@ -864,6 +864,233 @@
                         </DockPanel>
                     </Border>
                 </TabItem>
+                <!-- Détail du calcul -->
+                <TabItem Header="Détail du calcul">
+                    <Grid>
+                        <Grid.Resources>
+                            <!-- Bloc repliable du détail : en-tête cliquable avec chevron, ouvert par défaut -->
+                            <Style x:Key="DetailExpander" TargetType="Expander">
+                                <Setter Property="Margin" Value="0,4,0,2" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="Expander">
+                                            <StackPanel>
+                                                <ToggleButton IsChecked="{Binding IsExpanded, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
+                                                              Cursor="Hand" Focusable="False" HorizontalContentAlignment="Stretch"
+                                                              ToolTip="Cliquer pour replier ou déplier le bloc">
+                                                    <ToggleButton.Template>
+                                                        <ControlTemplate TargetType="ToggleButton">
+                                                            <Border x:Name="Bd" Background="#F3F6F9" BorderBrush="#E3E8EC" BorderThickness="1" CornerRadius="8" Padding="10,7">
+                                                                <DockPanel>
+                                                                    <TextBlock x:Name="Chevron" DockPanel.Dock="Left" FontFamily="{StaticResource IconFont}" Text="&#xE70D;"
+                                                                               FontSize="11" Margin="0,3,10,0" Foreground="{StaticResource PrimaryBrush}" />
+                                                                    <TextBlock x:Name="Hint" DockPanel.Dock="Right" Text="replier" FontSize="11" Margin="12,2,0,0"
+                                                                               Foreground="{StaticResource MutedBrush}" />
+                                                                    <ContentPresenter />
+                                                                </DockPanel>
+                                                            </Border>
+                                                            <ControlTemplate.Triggers>
+                                                                <Trigger Property="IsChecked" Value="False">
+                                                                    <Setter TargetName="Chevron" Property="Text" Value="&#xE76C;" />
+                                                                    <Setter TargetName="Hint" Property="Text" Value="déplier" />
+                                                                    <Setter TargetName="Bd" Property="Background" Value="White" />
+                                                                </Trigger>
+                                                                <Trigger Property="IsMouseOver" Value="True">
+                                                                    <Setter TargetName="Bd" Property="Background" Value="#E6EEF5" />
+                                                                    <Setter TargetName="Bd" Property="BorderBrush" Value="{StaticResource PrimaryBrush}" />
+                                                                </Trigger>
+                                                            </ControlTemplate.Triggers>
+                                                        </ControlTemplate>
+                                                    </ToggleButton.Template>
+                                                    <TextBlock Text="{TemplateBinding Header}" FontWeight="Bold" FontSize="13.5" TextWrapping="Wrap"
+                                                               Foreground="{StaticResource TextBrush}" />
+                                                </ToggleButton>
+                                                <ContentPresenter x:Name="Body" Visibility="Collapsed" Margin="8,4,0,4" />
+                                            </StackPanel>
+                                            <ControlTemplate.Triggers>
+                                                <Trigger Property="IsExpanded" Value="True">
+                                                    <Setter TargetName="Body" Property="Visibility" Value="Visible" />
+                                                </Trigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+
+                            <!-- Une ligne d'explication : phrase, calcul chiffré, résultat, précision, attention, anomalie -->
+                            <DataTemplate x:Key="DetailLineTemplate">
+                                <Border x:Name="Box" Padding="0,3" Margin="0,1" CornerRadius="6" HorizontalAlignment="Left">
+                                    <DockPanel>
+                                        <TextBlock x:Name="Glyph" DockPanel.Dock="Left" Text="•" Width="22" TextAlignment="Center"
+                                                   Foreground="{StaticResource MutedBrush}" FontSize="13" Margin="0,0,4,0" />
+                                        <TextBlock x:Name="Body" Text="{Binding Text}" TextWrapping="Wrap" FontSize="13" MaxWidth="1100"
+                                                   Foreground="{StaticResource TextBrush}" />
+                                    </DockPanel>
+                                </Border>
+                                <DataTemplate.Triggers>
+                                    <DataTrigger Binding="{Binding Kind}" Value="Formula">
+                                        <Setter TargetName="Box" Property="Background" Value="#EEF5FB" />
+                                        <Setter TargetName="Box" Property="Padding" Value="0,5,12,5" />
+                                        <Setter TargetName="Box" Property="Margin" Value="22,2,0,2" />
+                                        <Setter TargetName="Glyph" Property="Text" Value="=" />
+                                        <Setter TargetName="Glyph" Property="FontWeight" Value="Bold" />
+                                        <Setter TargetName="Glyph" Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+                                        <Setter TargetName="Body" Property="Foreground" Value="#1B4F72" />
+                                        <Setter TargetName="Body" Property="FontWeight" Value="SemiBold" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Kind}" Value="Heading">
+                                        <Setter TargetName="Box" Property="Margin" Value="0,10,0,2" />
+                                        <Setter TargetName="Glyph" Property="Text" Value="▸" />
+                                        <Setter TargetName="Glyph" Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+                                        <Setter TargetName="Body" Property="FontWeight" Value="Bold" />
+                                        <Setter TargetName="Body" Property="FontSize" Value="14" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Kind}" Value="Result">
+                                        <Setter TargetName="Glyph" Property="Text" Value="✔" />
+                                        <Setter TargetName="Glyph" Property="Foreground" Value="{StaticResource SuccessBrush}" />
+                                        <Setter TargetName="Body" Property="FontWeight" Value="SemiBold" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Kind}" Value="Note">
+                                        <Setter TargetName="Glyph" Property="Text" Value="ⓘ" />
+                                        <Setter TargetName="Body" Property="Foreground" Value="{StaticResource MutedBrush}" />
+                                        <Setter TargetName="Body" Property="FontStyle" Value="Italic" />
+                                        <Setter TargetName="Body" Property="FontSize" Value="12" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Kind}" Value="Warning">
+                                        <Setter TargetName="Box" Property="Background" Value="#FEF5E7" />
+                                        <Setter TargetName="Box" Property="Padding" Value="0,5,12,5" />
+                                        <Setter TargetName="Glyph" Property="Text" Value="⚠" />
+                                        <Setter TargetName="Glyph" Property="Foreground" Value="#B9770E" />
+                                        <Setter TargetName="Body" Property="Foreground" Value="#7E5109" />
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Kind}" Value="Error">
+                                        <Setter TargetName="Box" Property="Background" Value="#FDEDEC" />
+                                        <Setter TargetName="Box" Property="Padding" Value="0,5,12,5" />
+                                        <Setter TargetName="Glyph" Property="Text" Value="✖" />
+                                        <Setter TargetName="Glyph" Property="Foreground" Value="{StaticResource DangerBrush}" />
+                                        <Setter TargetName="Body" Property="Foreground" Value="#922B21" />
+                                        <Setter TargetName="Body" Property="FontWeight" Value="SemiBold" />
+                                    </DataTrigger>
+                                </DataTemplate.Triggers>
+                            </DataTemplate>
+                        </Grid.Resources>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="250" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Sommaire -->
+                        <Border Style="{StaticResource CardStyle}" Margin="0,0,10,0" Padding="10,12">
+                            <DockPanel>
+                                <StackPanel DockPanel.Dock="Top" Margin="6,0,6,10">
+                                    <TextBlock Text="Sommaire" FontWeight="Bold" FontSize="15" />
+                                    <TextBlock Style="{StaticResource Muted}" FontSize="11.5" TextWrapping="Wrap"
+                                               Text="Cliquez sur une étape pour y aller. Le détail suit la solution affichée." />
+                                </StackPanel>
+                                <Button DockPanel.Dock="Bottom" Style="{StaticResource OutlineButton}" Command="{Binding CopyCalculationCommand}"
+                                        Margin="4,10,4,0" Padding="10,7" ToolTip="Copie tout le détail en texte (courriel, document)">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock FontFamily="{StaticResource IconFont}" Text="&#xE8C8;" Margin="0,2,8,0" />
+                                        <TextBlock Text="Copier le détail" />
+                                    </StackPanel>
+                                </Button>
+                                <ListBox x:Name="CalculationToc" ItemsSource="{Binding CalculationView}" SelectedItem="{Binding SelectedCalculationSection}"
+                                         BorderThickness="0" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                         SelectionChanged="CalculationToc_SelectionChanged">
+                                    <ListBox.ItemContainerStyle>
+                                        <Style TargetType="ListBoxItem">
+                                            <Setter Property="Cursor" Value="Hand" />
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate TargetType="ListBoxItem">
+                                                        <Border x:Name="Bd" CornerRadius="7" Padding="8,6" Margin="0,1" Background="Transparent">
+                                                            <ContentPresenter />
+                                                        </Border>
+                                                        <ControlTemplate.Triggers>
+                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                <Setter TargetName="Bd" Property="Background" Value="#EEF2F5" />
+                                                            </Trigger>
+                                                            <Trigger Property="IsSelected" Value="True">
+                                                                <Setter TargetName="Bd" Property="Background" Value="#E3F0FA" />
+                                                            </Trigger>
+                                                        </ControlTemplate.Triggers>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </ListBox.ItemContainerStyle>
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <DockPanel>
+                                                <Border x:Name="Num" DockPanel.Dock="Left" Width="22" Height="22" CornerRadius="11" Margin="0,0,8,0"
+                                                        Background="{StaticResource PanelDarkBrush}" VerticalAlignment="Top">
+                                                    <TextBlock x:Name="NumText" Text="{Binding Number}" Foreground="White" FontSize="11" FontWeight="SemiBold"
+                                                               HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                </Border>
+                                                <TextBlock Text="{Binding Title}" TextWrapping="Wrap" FontSize="12.5" VerticalAlignment="Center" />
+                                            </DockPanel>
+                                            <DataTemplate.Triggers>
+                                                <DataTrigger Binding="{Binding Number}" Value="0">
+                                                    <Setter TargetName="Num" Property="Background" Value="{StaticResource PrimaryBrush}" />
+                                                    <Setter TargetName="NumText" Property="Text" Value="★" />
+                                                </DataTrigger>
+                                            </DataTemplate.Triggers>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </DockPanel>
+                        </Border>
+
+                        <!-- Étapes -->
+                        <ScrollViewer x:Name="CalculationScroll" Grid.Column="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                            <ItemsControl x:Name="CalculationItems" ItemsSource="{Binding CalculationView}" Margin="0,0,8,8">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Border Style="{StaticResource CardStyle}" Margin="0,0,0,12" Padding="20,16">
+                                            <StackPanel>
+                                                <DockPanel Margin="0,0,0,4">
+                                                    <Border x:Name="Num" DockPanel.Dock="Left" Width="30" Height="30" CornerRadius="15" Margin="0,0,12,0"
+                                                            Background="{StaticResource PanelDarkBrush}">
+                                                        <TextBlock x:Name="NumText" Text="{Binding Number}" Foreground="White" FontSize="14" FontWeight="Bold"
+                                                                   HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                                    </Border>
+                                                    <TextBlock Text="{Binding Title}" FontSize="17" FontWeight="Bold" VerticalAlignment="Center"
+                                                               Foreground="{StaticResource TextBrush}" />
+                                                </DockPanel>
+                                                <TextBlock Text="{Binding Purpose}" Style="{StaticResource Muted}" FontSize="12.5" TextWrapping="Wrap"
+                                                           Margin="42,0,0,10" />
+                                                <ItemsControl ItemsSource="{Binding Intro}" ItemTemplate="{StaticResource DetailLineTemplate}" Margin="14,0,0,0" />
+                                                <!-- Un bloc par ordre (et les totaux) : cliquer sur l'en-tête replie ou ouvre -->
+                                                <ItemsControl ItemsSource="{Binding Blocks}" Margin="14,4,0,0">
+                                                    <ItemsControl.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <Expander Style="{StaticResource DetailExpander}" IsExpanded="{Binding IsExpanded, Mode=TwoWay}"
+                                                                      Header="{Binding Title}">
+                                                                <ItemsControl ItemsSource="{Binding Lines}" ItemTemplate="{StaticResource DetailLineTemplate}" />
+                                                            </Expander>
+                                                        </DataTemplate>
+                                                    </ItemsControl.ItemTemplate>
+                                                </ItemsControl>
+                                                <ctl:DetailTableView Table="{Binding Table}" Margin="36,12,0,2"
+                                                                     Visibility="{Binding HasTable, Converter={StaticResource BoolToVisibility}}" />
+                                            </StackPanel>
+                                        </Border>
+                                        <DataTemplate.Triggers>
+                                            <DataTrigger Binding="{Binding Number}" Value="0">
+                                                <Setter TargetName="Num" Property="Background" Value="{StaticResource PrimaryBrush}" />
+                                                <Setter TargetName="NumText" Property="Text" Value="★" />
+                                            </DataTrigger>
+                                        </DataTemplate.Triggers>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+
+                        <TextBlock Grid.ColumnSpan="2" Style="{StaticResource Muted}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14"
+                                   Text="Importez un groupage : le détail du calcul de la solution affichée apparaîtra ici."
+                                   Visibility="{Binding HasCalculation, Converter={StaticResource InverseBoolToVisibility}}" />
+                    </Grid>
+                </TabItem>
             </TabControl>
 
             <!-- Barre d'état -->

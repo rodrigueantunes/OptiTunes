@@ -171,6 +171,27 @@ public sealed class PlacementRowViewModel(Placement placement, Color color)
     public string? Zone => Placement.Unit.GroupKey;
 }
 
+/// <summary>Étape du détail du calcul, avec ses blocs repliables (ouverts par défaut).</summary>
+public sealed class DetailSectionViewModel(OptiTunes.Core.Export.DetailSection section)
+{
+    public OptiTunes.Core.Export.DetailSection Section { get; } = section;
+    public int Number => Section.Number;
+    public string Title => Section.Title;
+    public string Purpose => Section.Purpose;
+    public IReadOnlyList<OptiTunes.Core.Export.DetailLine> Intro => Section.Intro;
+    public IReadOnlyList<DetailBlockViewModel> Blocks { get; } = section.Blocks.Select(b => new DetailBlockViewModel(b)).ToList();
+    public OptiTunes.Core.Export.DetailTable? Table => Section.Table;
+    public bool HasTable => Section.HasTable;
+}
+
+public sealed partial class DetailBlockViewModel(OptiTunes.Core.Export.DetailBlock block) : ObservableObject
+{
+    public string Title => block.Title;
+    public IReadOnlyList<OptiTunes.Core.Export.DetailLine> Lines => block.Lines;
+
+    [ObservableProperty] private bool _isExpanded = true;
+}
+
 public sealed record IssueRow(string Source, IssueSeverity Severity, string Label, string Message, int? Line);
 
 public sealed class RecentFileViewModel(string path)

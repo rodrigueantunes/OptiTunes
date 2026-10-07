@@ -7,6 +7,24 @@ public static class ReleaseNotes
 {
     public static IReadOnlyList<ReleaseNote> All { get; } =
     [
+        new("0.0.7", "Moteur affiné et récapitulatif du calcul",
+        [
+            "Moteur : après les 18 façons de charger, la meilleure de chaque mode est affinée (ordre de pose et sens de pose des ordres retravaillés, sans toucher au rangement). Plus d'ordres complets et des chargements plus courts sur les groupages aux formats variés.",
+            "Mode rangées : un ordre d'une seule pile reste libre de pivoter pour combler le vide laissé à côté d'une rangée.",
+            "Charge utile dépassée : nouvelle façon « ordres légers d'abord », qui charge le plus d'ordres complets possible.",
+            "Classement des solutions : à reliquat et nombre de camions égaux, le moins d'ordres incomplets passe avant le plancher le plus court.",
+            "Le résultat n'est jamais moins bon que le calcul précédent (le calcul sans affinage reste candidat) et le même fichier donne toujours le même plan.",
+            "Détail du calcul : nouveau point « Récapitulatif du calcul », toutes les opérations numérotées et écrites simplement avec les valeurs du groupage (camion, marchandises, chaque ordre, besoin total, chaque camion, résultat).",
+            "Détail du calcul : l'affinage de chaque camion est indiqué avec son résultat ; nouvel ordre des critères de classement."
+        ]),
+        new("0.0.6", "Détail du calcul",
+        [
+            "Nouvel onglet « Détail du calcul » (après Auto-test) : toute la démarche, étape par étape, en français et avec les chiffres du groupage.",
+            "Véhicule et espace chargeable, ordres, unités de chargement (piles de plaques, lits de tubes…), niveaux de gerbage, besoin en métrage linéaire, rangement et itinéraire, règles de placement, choix de la solution.",
+            "Pour chaque camion : poids, métrage réel, surface, volume, centre de gravité, unité la plus sollicitée et ce qui limite le camion, chaque fois avec la formule posée.",
+            "Reliquat expliqué motif par motif, contrôles du validateur indépendant et lexique des termes.",
+            "Sommaire cliquable, calculs mis en évidence, tableaux lisibles ; le calcul de chaque ordre est un bloc ouvert par défaut, repliable d'un clic sur son en-tête ; bouton « Copier le détail » pour le coller dans un courriel ou un document."
+        ]),
         new("0.0.5", "Gestion des arrêts et du rangement",
         [
             "Colonnes facultatives MAGASIN, DEPART et ARRIVEE sur les ordres : magasin et étapes de chargement / livraison de l'itinéraire.",

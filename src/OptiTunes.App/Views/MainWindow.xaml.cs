@@ -187,4 +187,17 @@ public partial class MainWindow : Window
     }
 
     private void ZoomExtents_Click(object sender, RoutedEventArgs e) => Viewport.ZoomExtents(300);
+
+    /// <summary>Sommaire du détail du calcul : amène l'étape choisie en haut de la page.</summary>
+    private void CalculationToc_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (CalculationToc.SelectedItem is not { } section ||
+            CalculationItems.ItemContainerGenerator.ContainerFromItem(section) is not FrameworkElement element)
+        {
+            return;
+        }
+
+        var top = element.TransformToAncestor(CalculationScroll).Transform(new Point(0, 0)).Y;
+        CalculationScroll.ScrollToVerticalOffset(CalculationScroll.VerticalOffset + top);
+    }
 }
