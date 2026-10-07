@@ -17,7 +17,7 @@ Le résultat n'est donc pas seulement un taux de remplissage.
 
 OptiTunes produit un plan de chargement spatial, contrôlé, visualisable en 2D et en 3D, avec métrage linéaire, gestion du gerbage, des arrêts, des contraintes physiques et, si nécessaire, de plusieurs véhicules. Chaque résultat est expliqué pas à pas, chiffres à l'appui.
 
-> Version actuelle : `0.0.6`
+> Version actuelle : `0.0.7`
 > Plateforme : `Windows`
 > Runtime : `.NET 10`
 > Interface : `WPF`
@@ -123,6 +123,26 @@ Pour chaque camion, le moteur essaie en parallèle 6 ordres de tri × 3 modes de
 | groupé par ordre | |
 
 Pour un camion, la meilleure façon est celle qui charge le plus d'ordres complets, puis le plus de volume, puis sur la longueur la plus courte.
+
+Quand le poids dépasse la charge utile, une façon de plus présente les ordres les plus légers d'abord : c'est elle qui charge le plus d'ordres complets possible.
+
+En mode rangées, seuls les ordres de plusieurs piles ont un sens de pose imposé ; un ordre d'une seule pile reste libre de pivoter pour combler le vide laissé à côté d'une rangée.
+
+### Affinage
+
+Le meilleur résultat de chaque mode de remplissage est ensuite affiné par une recherche locale :
+
+```text
+échanger deux unités              de même étape, zone et contrainte sol / sommet
+déplacer une unité                dans ce même groupe
+changer le sens de pose d'un ordre libre / en long / en travers
+```
+
+Le rangement n'est jamais touché. Une modification n'est gardée que si le camion n'est pas moins bon, et le meilleur résultat rencontré est retenu.
+
+- L'effort est proportionnel à la taille du groupage, pour que le calcul reste fluide.
+- Le tirage est à graine fixe : le même fichier donne toujours le même plan.
+- Le calcul sans affinage reste candidat : le plan recommandé n'est jamais moins bon que lui, y compris sur plusieurs camions.
 
 ---
 
@@ -522,10 +542,12 @@ Les plans identiques ne sont proposés qu'une fois. Les solutions sont classées
 ```text
 1. le moins d'articles en reliquat
 2. le moins de camions
-3. le métrage réel total le plus court (arrondi à 0,1 m)
-4. le moins d'ordres répartis sur plusieurs camions
-5. le moins d'ordres incomplets
+3. le moins d'ordres incomplets
+4. le métrage réel total le plus court (arrondi à 0,1 m)
+5. le moins d'ordres répartis sur plusieurs camions
 ```
+
+À reliquat égal, des ordres complets passent avant un plancher plus court : un camion limité par son poids est plein de toute façon.
 
 La première est recommandée. Les autres restent consultables dans le sélecteur « Solution » et comparables dans l'onglet **Solutions** (camions, articles, reliquat, ML, poids, ordres scindés ou incomplets, conformité).
 
@@ -628,6 +650,7 @@ L'onglet **Détail du calcul** explique la solution affichée, étape par étape
 9. Camion N : résultat chiffré          (un par camion)
 …  Reliquat
 …  Contrôles du plan
+…  Récapitulatif du calcul               toutes les opérations, numérotées
 …  Lexique
 ```
 
@@ -644,6 +667,18 @@ ML réel = (10 000 − 0) / 1 000 = 10,00 m
 - tableaux de chiffres (ordres, niveaux, métrage, camions, solutions, reliquat) ;
 - le calcul de chaque ordre est un bloc ouvert par défaut, repliable d'un clic sur son en-tête ;
 - bouton « Copier le détail » pour le coller dans un courriel ou un document.
+
+Le **Récapitulatif du calcul** reprend toutes les opérations, dans l'ordre, écrites simplement avec les valeurs du groupage :
+
+```text
+1. Largeur chargeable : 2 450 − 2 × 0 = 2 450 mm.
+5. Poids à charger : 8 × 117 + 6 × 180 + 10 × 95 + 4 × 420 = 4 646 kg.
+8. Niveaux par pile : le plus petit de 2 (fichier), 2 (hauteur : 2 700 ÷ 1 300 = 2,08 → 2),
+   4 (charge : 400 ÷ 117 = 3,42 → 3 dessus, + 1 au sol) → 2.
+9. Piles au sol : 8 ÷ 2 = 4 pile(s).
+16. Rangées : 2 pile(s) de front → 3 ÷ 2 = 1,5 → 2 rangée(s) (arrondi au-dessus).
+36. Poids : 4 646 ÷ 24 000 = 19,4 % de la charge utile.
+```
 
 Le détail suit la solution et le rangement affichés.
 
@@ -1153,7 +1188,7 @@ Production des données d'export.
 
 ### `CalculationDetails`
 
-Explication pas à pas du calcul, avec les chiffres (onglet **Détail du calcul**).
+Explication pas à pas du calcul, avec les chiffres, et récapitulatif de toutes les opérations (onglet **Détail du calcul**).
 
 ---
 
@@ -1206,6 +1241,7 @@ modes de rangement
 simulations
 détail du calcul
 cas générés
+banc de fiabilité (109 groupages types au résultat optimal connu)
 ```
 
 ```bash
@@ -1288,13 +1324,32 @@ Le dépôt source n'a donc pas vocation à servir de procédure d'installation u
 ├── formules posées avec les chiffres
 ├── blocs par ordre repliables
 └── copie du détail
+      │
+      ▼
+0.0.7
+│
+├── affinage du moteur
+├── sens de pose retravaillé
+├── ordres légers d'abord si surcharge
+├── classement : ordres complets avant métrage
+└── récapitulatif du calcul
 ```
 
 ---
 
-# 0.0.6
+# 0.0.7
 
-La version actuelle rend le calcul lisible de bout en bout.
+La version actuelle affine le moteur et termine l'explication du calcul.
+
+```text
+chaque camion        affiné après les 18 façons de charger
+chaque surcharge     traitée en chargeant le plus d'ordres complets
+chaque opération     récapitulée, numérotée, avec ses valeurs
+```
+
+Le résultat n'est jamais moins bon qu'avant, et le même fichier donne toujours le même plan.
+
+# Ce qui fait OptiTunes
 
 Avec la 0.0.5, l'optimisation tenait compte de la manière dont les marchandises entrent dans le véhicule, mais aussi de la manière dont elles devront en sortir.
 
@@ -1306,7 +1361,7 @@ respecter leur réalité physique
 préparer leur déchargement
 ```
 
-La 0.0.6 ajoute la dernière brique : comprendre pourquoi le plan est celui-là.
+Les 0.0.6 et 0.0.7 ajoutent la dernière brique : comprendre pourquoi le plan est celui-là.
 
 ```text
 chaque étape         expliquée en français
