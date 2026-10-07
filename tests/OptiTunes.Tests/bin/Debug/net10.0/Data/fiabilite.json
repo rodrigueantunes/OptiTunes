@@ -1,0 +1,9750 @@
+[
+ {
+  "id": "longs-003",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 800,
+    "w": 600,
+    "h": 700,
+    "qty": 3,
+    "weight": 340,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1020
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 3,
+    "weight": 210,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 630
+   },
+   {
+    "id": "OT03",
+    "l": 3200,
+    "w": 1600,
+    "h": 700,
+    "qty": 1,
+    "weight": 80,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 800,
+    "w": 600,
+    "h": 1500,
+    "qty": 2,
+    "weight": 600,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 2400,
+    "w": 1200,
+    "h": 1000,
+    "qty": 1,
+    "weight": 630,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 6800
+  },
+  "optitunes": {
+   "placed": 10,
+   "trucks": 1,
+   "ml": 6800
+  }
+ },
+ {
+  "id": "aleatoire-004",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2250,
+    "w": 1500,
+    "h": 1200,
+    "qty": 7,
+    "weight": 640,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1920
+   },
+   {
+    "id": "OT02",
+    "l": 2350,
+    "w": 1100,
+    "h": 1000,
+    "qty": 1,
+    "weight": 310,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 7100
+  },
+  "optitunes": {
+   "placed": 8,
+   "trucks": 1,
+   "ml": 6000
+  }
+ },
+ {
+  "id": "multi-006",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 600,
+    "w": 400,
+    "h": 700,
+    "qty": 7,
+    "weight": 700,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 900,
+    "qty": 13,
+    "weight": 700,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 1400,
+    "qty": 19,
+    "weight": 770,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 800,
+    "h": 1700,
+    "qty": 13,
+    "weight": 650,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1950
+   },
+   {
+    "id": "OT05",
+    "l": 1000,
+    "w": 1200,
+    "h": 900,
+    "qty": 11,
+    "weight": 660,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1000,
+    "w": 1200,
+    "h": 800,
+    "qty": 5,
+    "weight": 460,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1380
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 800,
+    "h": 700,
+    "qty": 8,
+    "weight": 440,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1320
+   },
+   {
+    "id": "OT08",
+    "l": 1000,
+    "w": 1200,
+    "h": 700,
+    "qty": 3,
+    "weight": 630,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 79,
+   "trucks": 3,
+   "ml": 27800
+  }
+ },
+ {
+  "id": "longs-009",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 3200,
+    "w": 1600,
+    "h": 600,
+    "qty": 3,
+    "weight": 790,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1800,
+    "qty": 2,
+    "weight": 240,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 3200,
+    "w": 1600,
+    "h": 1400,
+    "qty": 1,
+    "weight": 240,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 720
+   }
+  ],
+  "optimum": {
+   "ml": 7600
+  },
+  "optitunes": {
+   "placed": 6,
+   "trucks": 1,
+   "ml": 7600
+  }
+ },
+ {
+  "id": "multi-012",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1000,
+    "h": 1300,
+    "qty": 13,
+    "weight": 280,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 840
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 22,
+    "weight": 590,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 800,
+    "h": 1500,
+    "qty": 17,
+    "weight": 510,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1000,
+    "h": 1400,
+    "qty": 20,
+    "weight": 740,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2220
+   },
+   {
+    "id": "OT05",
+    "l": 1219,
+    "w": 1016,
+    "h": 1600,
+    "qty": 9,
+    "weight": 300,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 800,
+    "h": 1100,
+    "qty": 3,
+    "weight": 100,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 4,
+    "weight": 230,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 690
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 2,
+    "weight": 710,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2130
+   },
+   {
+    "id": "OT09",
+    "l": 1219,
+    "w": 1016,
+    "h": 600,
+    "qty": 1,
+    "weight": 440,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1320
+   },
+   {
+    "id": "OT10",
+    "l": 1140,
+    "w": 1140,
+    "h": 600,
+    "qty": 6,
+    "weight": 600,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1800
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 1,
+    "weight": 660,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1980
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 98,
+   "trucks": 4,
+   "ml": 46076
+  }
+ },
+ {
+  "id": "aleatoire-016",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1100,
+    "w": 1650,
+    "h": 900,
+    "qty": 3,
+    "weight": 410,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1230
+   },
+   {
+    "id": "OT02",
+    "l": 1450,
+    "w": 2400,
+    "h": 700,
+    "qty": 1,
+    "weight": 210,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1150,
+    "w": 1550,
+    "h": 1500,
+    "qty": 1,
+    "weight": 500,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1500
+   },
+   {
+    "id": "OT04",
+    "l": 1150,
+    "w": 1550,
+    "h": 1200,
+    "qty": 1,
+    "weight": 320,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 400,
+    "w": 1450,
+    "h": 1800,
+    "qty": 2,
+    "weight": 200,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 2200,
+    "w": 1700,
+    "h": 700,
+    "qty": 1,
+    "weight": 660,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 7700
+  },
+  "optitunes": {
+   "placed": 9,
+   "trucks": 1,
+   "ml": 6350
+  }
+ },
+ {
+  "id": "longs-021",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 1600,
+    "qty": 7,
+    "weight": 260,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 3200,
+    "w": 1600,
+    "h": 1200,
+    "qty": 1,
+    "weight": 500,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 7200
+  },
+  "optitunes": {
+   "placed": 8,
+   "trucks": 1,
+   "ml": 7200
+  }
+ },
+ {
+  "id": "aleatoire-022",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 500,
+    "w": 600,
+    "h": 700,
+    "qty": 9,
+    "weight": 720,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2160
+   },
+   {
+    "id": "OT02",
+    "l": 400,
+    "w": 2350,
+    "h": 1800,
+    "qty": 1,
+    "weight": 650,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1950
+   },
+   {
+    "id": "OT03",
+    "l": 2050,
+    "w": 1100,
+    "h": 900,
+    "qty": 1,
+    "weight": 580,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1550,
+    "w": 1300,
+    "h": 1300,
+    "qty": 4,
+    "weight": 210,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 630
+   },
+   {
+    "id": "OT05",
+    "l": 1450,
+    "w": 1850,
+    "h": 1600,
+    "qty": 1,
+    "weight": 600,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1800
+   },
+   {
+    "id": "OT06",
+    "l": 2350,
+    "w": 1650,
+    "h": 1000,
+    "qty": 1,
+    "weight": 140,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 8800
+  },
+  "optitunes": {
+   "placed": 17,
+   "trucks": 1,
+   "ml": 8800
+  }
+ },
+ {
+  "id": "multi-024",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 1400,
+    "qty": 14,
+    "weight": 110,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 330
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 1400,
+    "qty": 21,
+    "weight": 670,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 1400,
+    "qty": 14,
+    "weight": 740,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2220
+   },
+   {
+    "id": "OT04",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 12,
+    "weight": 360,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1080
+   },
+   {
+    "id": "OT05",
+    "l": 1219,
+    "w": 1016,
+    "h": 1400,
+    "qty": 10,
+    "weight": 650,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 20,
+    "weight": 300,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 900
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 800,
+    "h": 1600,
+    "qty": 6,
+    "weight": 380,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1140
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 1200,
+    "h": 1800,
+    "qty": 2,
+    "weight": 50,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 3,
+    "weight": 540,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1620
+   },
+   {
+    "id": "OT10",
+    "l": 1219,
+    "w": 1016,
+    "h": 600,
+    "qty": 3,
+    "weight": 470,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 600,
+    "w": 400,
+    "h": 800,
+    "qty": 7,
+    "weight": 220,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 112,
+   "trucks": 4,
+   "ml": 45692
+  }
+ },
+ {
+  "id": "palettes-025",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 7,
+    "weight": 740,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1200,
+    "qty": 2,
+    "weight": 50,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 150
+   },
+   {
+    "id": "OT03",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 1,
+    "weight": 200,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 600
+   }
+  ],
+  "optimum": {
+   "ml": 4400
+  },
+  "optitunes": {
+   "placed": 10,
+   "trucks": 1,
+   "ml": 4400
+  }
+ },
+ {
+  "id": "aleatoire-028",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1950,
+    "w": 1750,
+    "h": 600,
+    "qty": 4,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1080
+   },
+   {
+    "id": "OT02",
+    "l": 750,
+    "w": 350,
+    "h": 1600,
+    "qty": 1,
+    "weight": 150,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 7000
+  },
+  "optitunes": {
+   "placed": 5,
+   "trucks": 1,
+   "ml": 7000
+  }
+ },
+ {
+  "id": "multi-030",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 800,
+    "w": 600,
+    "h": 800,
+    "qty": 15,
+    "weight": 390,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1170
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 1200,
+    "qty": 8,
+    "weight": 330,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 990
+   },
+   {
+    "id": "OT03",
+    "l": 600,
+    "w": 400,
+    "h": 1300,
+    "qty": 12,
+    "weight": 480,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1440
+   },
+   {
+    "id": "OT04",
+    "l": 1219,
+    "w": 1016,
+    "h": 700,
+    "qty": 23,
+    "weight": 430,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 1,
+    "weight": 50,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 150
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 800,
+    "h": 1300,
+    "qty": 23,
+    "weight": 90,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 270
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 800,
+    "h": 1000,
+    "qty": 15,
+    "weight": 310,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 1000,
+    "h": 900,
+    "qty": 1,
+    "weight": 150,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 450
+   },
+   {
+    "id": "OT09",
+    "l": 1000,
+    "w": 1200,
+    "h": 1500,
+    "qty": 1,
+    "weight": 620,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 99,
+   "trucks": 3,
+   "ml": 29592
+  }
+ },
+ {
+  "id": "longs-033",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 6000,
+    "w": 1000,
+    "h": 1400,
+    "qty": 1,
+    "weight": 210,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 900,
+    "qty": 1,
+    "weight": 440,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 6000,
+    "w": 1000,
+    "h": 1100,
+    "qty": 1,
+    "weight": 470,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1410
+   }
+  ],
+  "optimum": {
+   "ml": 7200
+  },
+  "optitunes": {
+   "placed": 3,
+   "trucks": 1,
+   "ml": 6000
+  }
+ },
+ {
+  "id": "lourds-035",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1200,
+    "qty": 12,
+    "weight": 380,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 684
+   },
+   {
+    "id": "OT02",
+    "l": 1000,
+    "w": 1200,
+    "h": 800,
+    "qty": 1,
+    "weight": 180,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 162
+   },
+   {
+    "id": "OT03",
+    "l": 1140,
+    "w": 1140,
+    "h": 1000,
+    "qty": 1,
+    "weight": 130,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 234
+   }
+  ],
+  "optimum": {
+   "ml": 4740
+  },
+  "optitunes": {
+   "placed": 14,
+   "trucks": 1,
+   "ml": 4600
+  }
+ },
+ {
+  "id": "multi-036",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 1500,
+    "qty": 16,
+    "weight": 570,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1710
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 1000,
+    "qty": 19,
+    "weight": 740,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2220
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 1200,
+    "qty": 2,
+    "weight": 50,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 600,
+    "w": 400,
+    "h": 1400,
+    "qty": 5,
+    "weight": 470,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1410
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 800,
+    "h": 1100,
+    "qty": 6,
+    "weight": 440,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1000,
+    "w": 1200,
+    "h": 1500,
+    "qty": 9,
+    "weight": 440,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1320
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1200,
+    "h": 1800,
+    "qty": 14,
+    "weight": 160,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 480
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 800,
+    "h": 1300,
+    "qty": 12,
+    "weight": 470,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1410
+   },
+   {
+    "id": "OT09",
+    "l": 600,
+    "w": 400,
+    "h": 800,
+    "qty": 17,
+    "weight": 690,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 2070
+   },
+   {
+    "id": "OT10",
+    "l": 1200,
+    "w": 1000,
+    "h": 1100,
+    "qty": 1,
+    "weight": 240,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 720
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 800,
+    "h": 1600,
+    "qty": 22,
+    "weight": 320,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT12",
+    "l": 1200,
+    "w": 1000,
+    "h": 1100,
+    "qty": 15,
+    "weight": 350,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1050
+   },
+   {
+    "id": "OT13",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 5,
+    "weight": 530,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1590
+   },
+   {
+    "id": "OT14",
+    "l": 1200,
+    "w": 1200,
+    "h": 1200,
+    "qty": 3,
+    "weight": 520,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1560
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 146,
+   "trucks": 4,
+   "ml": 40600
+  }
+ },
+ {
+  "id": "aleatoire-040",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 800,
+    "w": 1850,
+    "h": 1600,
+    "qty": 8,
+    "weight": 790,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 500,
+    "w": 1500,
+    "h": 1400,
+    "qty": 2,
+    "weight": 250,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 750
+   },
+   {
+    "id": "OT03",
+    "l": 1400,
+    "w": 1000,
+    "h": 1700,
+    "qty": 1,
+    "weight": 60,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 180
+   }
+  ],
+  "optimum": {
+   "ml": 6300
+  },
+  "optitunes": {
+   "placed": 11,
+   "trucks": 1,
+   "ml": 6700
+  }
+ },
+ {
+  "id": "multi-042",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 900,
+    "qty": 22,
+    "weight": 550,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1650
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1000,
+    "h": 1100,
+    "qty": 11,
+    "weight": 290,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 600,
+    "w": 400,
+    "h": 1200,
+    "qty": 18,
+    "weight": 260,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 800,
+    "qty": 11,
+    "weight": 80,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 800,
+    "h": 1800,
+    "qty": 22,
+    "weight": 370,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1110
+   },
+   {
+    "id": "OT06",
+    "l": 800,
+    "w": 600,
+    "h": 1200,
+    "qty": 24,
+    "weight": 530,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 600,
+    "w": 400,
+    "h": 1300,
+    "qty": 8,
+    "weight": 250,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 750
+   },
+   {
+    "id": "OT08",
+    "l": 600,
+    "w": 400,
+    "h": 1100,
+    "qty": 1,
+    "weight": 590,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1770
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 117,
+   "trucks": 2,
+   "ml": 25200
+  }
+ },
+ {
+  "id": "longs-045",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 1100,
+    "qty": 10,
+    "weight": 190,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1000,
+    "w": 1200,
+    "h": 900,
+    "qty": 5,
+    "weight": 180,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 540
+   }
+  ],
+  "optimum": {
+   "ml": 3600
+  },
+  "optitunes": {
+   "placed": 15,
+   "trucks": 1,
+   "ml": 3400
+  }
+ },
+ {
+  "id": "aleatoire-046",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2250,
+    "w": 850,
+    "h": 1500,
+    "qty": 7,
+    "weight": 280,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1850,
+    "w": 400,
+    "h": 1100,
+    "qty": 6,
+    "weight": 450,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1350
+   },
+   {
+    "id": "OT03",
+    "l": 1650,
+    "w": 1800,
+    "h": 1800,
+    "qty": 1,
+    "weight": 140,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 420
+   }
+  ],
+  "optimum": {
+   "ml": 8200
+  },
+  "optitunes": {
+   "placed": 14,
+   "trucks": 1,
+   "ml": 8400
+  }
+ },
+ {
+  "id": "multi-048",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 600,
+    "w": 400,
+    "h": 1600,
+    "qty": 5,
+    "weight": 520,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1560
+   },
+   {
+    "id": "OT02",
+    "l": 1000,
+    "w": 1200,
+    "h": 1100,
+    "qty": 23,
+    "weight": 600,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1800
+   },
+   {
+    "id": "OT03",
+    "l": 600,
+    "w": 400,
+    "h": 800,
+    "qty": 20,
+    "weight": 420,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1219,
+    "w": 1016,
+    "h": 1700,
+    "qty": 23,
+    "weight": 130,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 800,
+    "h": 1300,
+    "qty": 14,
+    "weight": 520,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 800,
+    "w": 600,
+    "h": 900,
+    "qty": 23,
+    "weight": 750,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2250
+   },
+   {
+    "id": "OT07",
+    "l": 800,
+    "w": 600,
+    "h": 1400,
+    "qty": 17,
+    "weight": 460,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 600,
+    "w": 400,
+    "h": 1300,
+    "qty": 15,
+    "weight": 440,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1320
+   },
+   {
+    "id": "OT09",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 13,
+    "weight": 230,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 690
+   },
+   {
+    "id": "OT10",
+    "l": 800,
+    "w": 600,
+    "h": 900,
+    "qty": 10,
+    "weight": 690,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2070
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 800,
+    "h": 1400,
+    "qty": 9,
+    "weight": 740,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 2220
+   },
+   {
+    "id": "OT12",
+    "l": 1219,
+    "w": 1016,
+    "h": 1000,
+    "qty": 7,
+    "weight": 230,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 690
+   },
+   {
+    "id": "OT13",
+    "l": 600,
+    "w": 400,
+    "h": 600,
+    "qty": 17,
+    "weight": 550,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1650
+   },
+   {
+    "id": "OT14",
+    "l": 1200,
+    "w": 800,
+    "h": 700,
+    "qty": 1,
+    "weight": 290,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 197,
+   "trucks": 4,
+   "ml": 46424
+  }
+ },
+ {
+  "id": "longs-051",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 4000,
+    "w": 1200,
+    "h": 900,
+    "qty": 2,
+    "weight": 130,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 6000,
+    "w": 1000,
+    "h": 1600,
+    "qty": 2,
+    "weight": 380,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1140
+   },
+   {
+    "id": "OT03",
+    "l": 1219,
+    "w": 1016,
+    "h": 1300,
+    "qty": 1,
+    "weight": 600,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1800
+   }
+  ],
+  "optimum": {
+   "ml": 11016
+  },
+  "optitunes": {
+   "placed": 5,
+   "trucks": 1,
+   "ml": 11016
+  }
+ },
+ {
+  "id": "aleatoire-052",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1700,
+    "w": 2000,
+    "h": 1400,
+    "qty": 2,
+    "weight": 90,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 550,
+    "w": 950,
+    "h": 1500,
+    "qty": 4,
+    "weight": 230,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 690
+   },
+   {
+    "id": "OT03",
+    "l": 2300,
+    "w": 1650,
+    "h": 1000,
+    "qty": 2,
+    "weight": 400,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 2050,
+    "w": 2000,
+    "h": 1500,
+    "qty": 1,
+    "weight": 210,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 7650
+  },
+  "optitunes": {
+   "placed": 9,
+   "trucks": 1,
+   "ml": 6300
+  }
+ },
+ {
+  "id": "multi-054",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1000,
+    "h": 900,
+    "qty": 11,
+    "weight": 490,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1470
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1100,
+    "qty": 10,
+    "weight": 160,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 1600,
+    "qty": 5,
+    "weight": 190,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 570
+   },
+   {
+    "id": "OT04",
+    "l": 1000,
+    "w": 1200,
+    "h": 1100,
+    "qty": 10,
+    "weight": 630,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1200,
+    "h": 800,
+    "qty": 6,
+    "weight": 670,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2010
+   },
+   {
+    "id": "OT06",
+    "l": 1140,
+    "w": 1140,
+    "h": 1800,
+    "qty": 23,
+    "weight": 230,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1000,
+    "h": 1500,
+    "qty": 4,
+    "weight": 500,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1500
+   },
+   {
+    "id": "OT08",
+    "l": 1140,
+    "w": 1140,
+    "h": 1800,
+    "qty": 3,
+    "weight": 500,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1200,
+    "h": 1600,
+    "qty": 2,
+    "weight": 190,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 1140,
+    "w": 1140,
+    "h": 1400,
+    "qty": 2,
+    "weight": 600,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1800
+   },
+   {
+    "id": "OT11",
+    "l": 1140,
+    "w": 1140,
+    "h": 1000,
+    "qty": 1,
+    "weight": 320,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 960
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 77,
+   "trucks": 3,
+   "ml": 28020
+  }
+ },
+ {
+  "id": "non_gerbables-056",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1600,
+    "qty": 9,
+    "weight": 700,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2100
+   },
+   {
+    "id": "OT02",
+    "l": 600,
+    "w": 400,
+    "h": 1700,
+    "qty": 1,
+    "weight": 130,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 390
+   },
+   {
+    "id": "OT03",
+    "l": 600,
+    "w": 400,
+    "h": 1800,
+    "qty": 3,
+    "weight": 270,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 810
+   },
+   {
+    "id": "OT04",
+    "l": 600,
+    "w": 400,
+    "h": 1100,
+    "qty": 1,
+    "weight": 600,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 6000
+  },
+  "optitunes": {
+   "placed": 14,
+   "trucks": 1,
+   "ml": 6000
+  }
+ },
+ {
+  "id": "lourds-059",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 1300,
+    "qty": 5,
+    "weight": 770,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 693
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 1200,
+    "qty": 2,
+    "weight": 530,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 477
+   },
+   {
+    "id": "OT03",
+    "l": 1219,
+    "w": 1016,
+    "h": 1000,
+    "qty": 1,
+    "weight": 570,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1026
+   }
+  ],
+  "optimum": {
+   "ml": 4220
+  },
+  "optitunes": {
+   "placed": 8,
+   "trucks": 1,
+   "ml": 3880
+  }
+ },
+ {
+  "id": "multi-060",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 1600,
+    "qty": 18,
+    "weight": 470,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1410
+   },
+   {
+    "id": "OT02",
+    "l": 1140,
+    "w": 1140,
+    "h": 1100,
+    "qty": 22,
+    "weight": 460,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1380
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 1200,
+    "qty": 4,
+    "weight": 680,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2040
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 800,
+    "h": 900,
+    "qty": 10,
+    "weight": 540,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1140,
+    "w": 1140,
+    "h": 900,
+    "qty": 10,
+    "weight": 80,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1000,
+    "w": 1200,
+    "h": 1500,
+    "qty": 23,
+    "weight": 730,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2190
+   },
+   {
+    "id": "OT07",
+    "l": 1000,
+    "w": 1200,
+    "h": 600,
+    "qty": 23,
+    "weight": 90,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 800,
+    "w": 600,
+    "h": 800,
+    "qty": 3,
+    "weight": 440,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 800,
+    "w": 600,
+    "h": 1500,
+    "qty": 3,
+    "weight": 560,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1680
+   },
+   {
+    "id": "OT10",
+    "l": 1140,
+    "w": 1140,
+    "h": 1000,
+    "qty": 1,
+    "weight": 320,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 960
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 117,
+   "trucks": 4,
+   "ml": 41640
+  }
+ },
+ {
+  "id": "multi-066",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 1000,
+    "qty": 1,
+    "weight": 440,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1320
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1100,
+    "qty": 2,
+    "weight": 550,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1650
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 800,
+    "qty": 2,
+    "weight": 420,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1000,
+    "h": 600,
+    "qty": 7,
+    "weight": 570,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1710
+   },
+   {
+    "id": "OT05",
+    "l": 800,
+    "w": 600,
+    "h": 1200,
+    "qty": 6,
+    "weight": 790,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1219,
+    "w": 1016,
+    "h": 700,
+    "qty": 11,
+    "weight": 430,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1290
+   },
+   {
+    "id": "OT07",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 8,
+    "weight": 630,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 1000,
+    "h": 600,
+    "qty": 1,
+    "weight": 310,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 800,
+    "w": 600,
+    "h": 700,
+    "qty": 7,
+    "weight": 300,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 600,
+    "w": 400,
+    "h": 1200,
+    "qty": 18,
+    "weight": 790,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 1219,
+    "w": 1016,
+    "h": 900,
+    "qty": 16,
+    "weight": 260,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 780
+   },
+   {
+    "id": "OT12",
+    "l": 1140,
+    "w": 1140,
+    "h": 800,
+    "qty": 6,
+    "weight": 790,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT13",
+    "l": 1200,
+    "w": 800,
+    "h": 900,
+    "qty": 5,
+    "weight": 600,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1800
+   },
+   {
+    "id": "OT14",
+    "l": 1000,
+    "w": 1200,
+    "h": 1100,
+    "qty": 8,
+    "weight": 420,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 98,
+   "trucks": 3,
+   "ml": 26456
+  }
+ },
+ {
+  "id": "aleatoire-070",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2000,
+    "w": 1100,
+    "h": 900,
+    "qty": 1,
+    "weight": 160,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 480
+   },
+   {
+    "id": "OT02",
+    "l": 650,
+    "w": 2200,
+    "h": 1000,
+    "qty": 3,
+    "weight": 570,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1710
+   },
+   {
+    "id": "OT03",
+    "l": 1600,
+    "w": 1550,
+    "h": 1800,
+    "qty": 1,
+    "weight": 750,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1300,
+    "w": 2350,
+    "h": 1500,
+    "qty": 1,
+    "weight": 610,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1830
+   },
+   {
+    "id": "OT05",
+    "l": 2050,
+    "w": 1000,
+    "h": 1700,
+    "qty": 1,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 5850
+  },
+  "optitunes": {
+   "placed": 7,
+   "trucks": 1,
+   "ml": 5050
+  }
+ },
+ {
+  "id": "lourds-071",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 1400,
+    "qty": 7,
+    "weight": 590,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 531
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 800,
+    "qty": 1,
+    "weight": 330,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 297
+   }
+  ],
+  "optimum": {
+   "ml": 3416
+  },
+  "optitunes": {
+   "placed": 8,
+   "trucks": 1,
+   "ml": 3200
+  }
+ },
+ {
+  "id": "multi-072",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 800,
+    "w": 600,
+    "h": 1700,
+    "qty": 21,
+    "weight": 140,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 1000,
+    "qty": 13,
+    "weight": 220,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 700,
+    "qty": 9,
+    "weight": 300,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1000,
+    "w": 1200,
+    "h": 900,
+    "qty": 10,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1080
+   },
+   {
+    "id": "OT05",
+    "l": 800,
+    "w": 600,
+    "h": 1000,
+    "qty": 11,
+    "weight": 490,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1470
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 800,
+    "h": 1500,
+    "qty": 5,
+    "weight": 570,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 16,
+    "weight": 790,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2370
+   },
+   {
+    "id": "OT08",
+    "l": 1140,
+    "w": 1140,
+    "h": 1800,
+    "qty": 13,
+    "weight": 170,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 510
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 800,
+    "h": 1500,
+    "qty": 12,
+    "weight": 410,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 1200,
+    "w": 800,
+    "h": 1500,
+    "qty": 12,
+    "weight": 740,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2220
+   },
+   {
+    "id": "OT11",
+    "l": 800,
+    "w": 600,
+    "h": 1600,
+    "qty": 1,
+    "weight": 470,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1410
+   },
+   {
+    "id": "OT12",
+    "l": 1200,
+    "w": 1000,
+    "h": 1800,
+    "qty": 1,
+    "weight": 400,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1200
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 124,
+   "trucks": 4,
+   "ml": 42640
+  }
+ },
+ {
+  "id": "longs-075",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2500,
+    "w": 1250,
+    "h": 1700,
+    "qty": 5,
+    "weight": 310,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 600,
+    "qty": 3,
+    "weight": 500,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1500
+   },
+   {
+    "id": "OT03",
+    "l": 6000,
+    "w": 1000,
+    "h": 1800,
+    "qty": 1,
+    "weight": 260,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 780
+   }
+  ],
+  "optimum": {
+   "ml": 12500
+  },
+  "optitunes": {
+   "placed": 9,
+   "trucks": 1,
+   "ml": 12500
+  }
+ },
+ {
+  "id": "aleatoire-076",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1400,
+    "w": 2200,
+    "h": 800,
+    "qty": 1,
+    "weight": 150,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 2250,
+    "w": 600,
+    "h": 1600,
+    "qty": 2,
+    "weight": 780,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2340
+   },
+   {
+    "id": "OT03",
+    "l": 1300,
+    "w": 2150,
+    "h": 1600,
+    "qty": 2,
+    "weight": 250,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 750
+   },
+   {
+    "id": "OT04",
+    "l": 2100,
+    "w": 1050,
+    "h": 1000,
+    "qty": 1,
+    "weight": 730,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2190
+   }
+  ],
+  "optimum": {
+   "ml": 6000
+  },
+  "optitunes": {
+   "placed": 6,
+   "trucks": 1,
+   "ml": 5200
+  }
+ },
+ {
+  "id": "lourds-077",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 800,
+    "qty": 1,
+    "weight": 130,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 117
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 22,
+    "weight": 230,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 414
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 1500,
+    "qty": 4,
+    "weight": 530,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 477
+   },
+   {
+    "id": "OT04",
+    "l": 800,
+    "w": 600,
+    "h": 700,
+    "qty": 11,
+    "weight": 210,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 378
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1200,
+    "h": 1500,
+    "qty": 1,
+    "weight": 470,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 423
+   }
+  ],
+  "optimum": {
+   "ml": 11000
+  },
+  "optitunes": {
+   "placed": 39,
+   "trucks": 1,
+   "ml": 9400
+  }
+ },
+ {
+  "id": "multi-078",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 1100,
+    "qty": 21,
+    "weight": 420,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 800,
+    "qty": 1,
+    "weight": 630,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1890
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 700,
+    "qty": 22,
+    "weight": 650,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1950
+   },
+   {
+    "id": "OT04",
+    "l": 800,
+    "w": 600,
+    "h": 1500,
+    "qty": 9,
+    "weight": 250,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1000,
+    "h": 1400,
+    "qty": 22,
+    "weight": 540,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1620
+   },
+   {
+    "id": "OT06",
+    "l": 600,
+    "w": 400,
+    "h": 1800,
+    "qty": 21,
+    "weight": 400,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1140,
+    "w": 1140,
+    "h": 700,
+    "qty": 11,
+    "weight": 790,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2370
+   },
+   {
+    "id": "OT08",
+    "l": 800,
+    "w": 600,
+    "h": 900,
+    "qty": 1,
+    "weight": 750,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 108,
+   "trucks": 3,
+   "ml": 25000
+  }
+ },
+ {
+  "id": "non_gerbables-080",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 1800,
+    "qty": 8,
+    "weight": 380,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 2,
+    "weight": 400,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1200
+   },
+   {
+    "id": "OT03",
+    "l": 1140,
+    "w": 1140,
+    "h": 1300,
+    "qty": 1,
+    "weight": 160,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 480
+   }
+  ],
+  "optimum": {
+   "ml": 6592
+  },
+  "optitunes": {
+   "placed": 11,
+   "trucks": 1,
+   "ml": 6592
+  }
+ },
+ {
+  "id": "multi-084",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1800,
+    "qty": 22,
+    "weight": 710,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 12,
+    "weight": 290,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 21,
+    "weight": 390,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1170
+   },
+   {
+    "id": "OT04",
+    "l": 600,
+    "w": 400,
+    "h": 1200,
+    "qty": 11,
+    "weight": 260,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 800,
+    "w": 600,
+    "h": 600,
+    "qty": 21,
+    "weight": 510,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1530
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 8,
+    "weight": 550,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 23,
+    "weight": 430,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 1000,
+    "h": 1000,
+    "qty": 1,
+    "weight": 610,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1200,
+    "h": 1600,
+    "qty": 1,
+    "weight": 240,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 120,
+   "trucks": 4,
+   "ml": 44200
+  }
+ },
+ {
+  "id": "aleatoire-088",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2300,
+    "w": 2350,
+    "h": 1800,
+    "qty": 2,
+    "weight": 240,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 720
+   },
+   {
+    "id": "OT02",
+    "l": 700,
+    "w": 1350,
+    "h": 600,
+    "qty": 1,
+    "weight": 630,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 700,
+    "w": 850,
+    "h": 1300,
+    "qty": 1,
+    "weight": 680,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1950,
+    "w": 400,
+    "h": 700,
+    "qty": 1,
+    "weight": 520,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1560
+   }
+  ],
+  "optimum": {
+   "ml": 5700
+  },
+  "optitunes": {
+   "placed": 5,
+   "trucks": 1,
+   "ml": 5700
+  }
+ },
+ {
+  "id": "palettes-091",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1500,
+    "qty": 11,
+    "weight": 540,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1620
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 2,
+    "weight": 750,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2250
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 800,
+    "h": 1700,
+    "qty": 1,
+    "weight": 410,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 8400
+  },
+  "optitunes": {
+   "placed": 14,
+   "trucks": 1,
+   "ml": 8400
+  }
+ },
+ {
+  "id": "aleatoire-094",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1700,
+    "w": 1300,
+    "h": 1700,
+    "qty": 5,
+    "weight": 70,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1250,
+    "w": 650,
+    "h": 1000,
+    "qty": 1,
+    "weight": 220,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 660
+   }
+  ],
+  "optimum": {
+   "ml": 6500
+  },
+  "optitunes": {
+   "placed": 6,
+   "trucks": 1,
+   "ml": 6500
+  }
+ },
+ {
+  "id": "longs-099",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 3200,
+    "w": 1600,
+    "h": 1100,
+    "qty": 2,
+    "weight": 680,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 2400,
+    "w": 1200,
+    "h": 1500,
+    "qty": 2,
+    "weight": 510,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1530
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 1300,
+    "qty": 6,
+    "weight": 160,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 480
+   },
+   {
+    "id": "OT04",
+    "l": 3200,
+    "w": 1600,
+    "h": 1000,
+    "qty": 1,
+    "weight": 570,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1710
+   }
+  ],
+  "optimum": {
+   "ml": 12000
+  },
+  "optitunes": {
+   "placed": 11,
+   "trucks": 1,
+   "ml": 10800
+  }
+ },
+ {
+  "id": "multi-102",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 1200,
+    "qty": 16,
+    "weight": 290,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 870
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1200,
+    "qty": 7,
+    "weight": 360,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1080
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 19,
+    "weight": 340,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1020
+   },
+   {
+    "id": "OT04",
+    "l": 1000,
+    "w": 1200,
+    "h": 1400,
+    "qty": 7,
+    "weight": 620,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1860
+   },
+   {
+    "id": "OT05",
+    "l": 1140,
+    "w": 1140,
+    "h": 700,
+    "qty": 13,
+    "weight": 410,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1000,
+    "h": 1700,
+    "qty": 14,
+    "weight": 560,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1680
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1000,
+    "h": 1100,
+    "qty": 5,
+    "weight": 340,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1000,
+    "w": 1200,
+    "h": 1300,
+    "qty": 2,
+    "weight": 270,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 810
+   },
+   {
+    "id": "OT09",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 1,
+    "weight": 600,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1800
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 84,
+   "trucks": 2,
+   "ml": 22832
+  }
+ },
+ {
+  "id": "lourds-107",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 800,
+    "w": 600,
+    "h": 1600,
+    "qty": 3,
+    "weight": 50,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 45
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1000,
+    "h": 900,
+    "qty": 9,
+    "weight": 480,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 864
+   }
+  ],
+  "optimum": {
+   "ml": 3200
+  },
+  "optitunes": {
+   "placed": 12,
+   "trucks": 1,
+   "ml": 3600
+  }
+ },
+ {
+  "id": "multi-108",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 600,
+    "qty": 23,
+    "weight": 260,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 600,
+    "w": 400,
+    "h": 1300,
+    "qty": 19,
+    "weight": 670,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 1400,
+    "qty": 14,
+    "weight": 90,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 270
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 1600,
+    "qty": 7,
+    "weight": 520,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1560
+   },
+   {
+    "id": "OT05",
+    "l": 600,
+    "w": 400,
+    "h": 800,
+    "qty": 9,
+    "weight": 510,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1530
+   },
+   {
+    "id": "OT06",
+    "l": 1140,
+    "w": 1140,
+    "h": 1100,
+    "qty": 24,
+    "weight": 710,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2130
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 800,
+    "h": 1500,
+    "qty": 18,
+    "weight": 690,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1000,
+    "w": 1200,
+    "h": 1000,
+    "qty": 1,
+    "weight": 380,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 600,
+    "w": 400,
+    "h": 1600,
+    "qty": 19,
+    "weight": 620,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 1140,
+    "w": 1140,
+    "h": 1500,
+    "qty": 1,
+    "weight": 710,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 600,
+    "w": 400,
+    "h": 1400,
+    "qty": 1,
+    "weight": 630,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT12",
+    "l": 1219,
+    "w": 1016,
+    "h": 1600,
+    "qty": 1,
+    "weight": 240,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 137,
+   "trucks": 4,
+   "ml": 39280
+  }
+ },
+ {
+  "id": "longs-111",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 3200,
+    "w": 1600,
+    "h": 900,
+    "qty": 6,
+    "weight": 460,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 4000,
+    "w": 1200,
+    "h": 900,
+    "qty": 2,
+    "weight": 430,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 800,
+    "qty": 1,
+    "weight": 200,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 600
+   }
+  ],
+  "optimum": {
+   "ml": 13600
+  },
+  "optitunes": {
+   "placed": 9,
+   "trucks": 1,
+   "ml": 13600
+  }
+ },
+ {
+  "id": "multi-114",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 800,
+    "w": 600,
+    "h": 1300,
+    "qty": 5,
+    "weight": 240,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1000,
+    "h": 1300,
+    "qty": 19,
+    "weight": 100,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 1500,
+    "qty": 12,
+    "weight": 580,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1740
+   },
+   {
+    "id": "OT04",
+    "l": 1000,
+    "w": 1200,
+    "h": 1300,
+    "qty": 17,
+    "weight": 250,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 750
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1000,
+    "h": 1000,
+    "qty": 5,
+    "weight": 150,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 450
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1200,
+    "h": 1400,
+    "qty": 4,
+    "weight": 250,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1140,
+    "w": 1140,
+    "h": 1700,
+    "qty": 1,
+    "weight": 490,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1470
+   },
+   {
+    "id": "OT08",
+    "l": 1140,
+    "w": 1140,
+    "h": 900,
+    "qty": 3,
+    "weight": 500,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 66,
+   "trucks": 2,
+   "ml": 24540
+  }
+ },
+ {
+  "id": "non_gerbables-116",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 700,
+    "qty": 6,
+    "weight": 650,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1950
+   },
+   {
+    "id": "OT02",
+    "l": 1140,
+    "w": 1140,
+    "h": 1400,
+    "qty": 4,
+    "weight": 430,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1290
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 600,
+    "qty": 1,
+    "weight": 750,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 6000
+  },
+  "optitunes": {
+   "placed": 11,
+   "trucks": 1,
+   "ml": 6000
+  }
+ },
+ {
+  "id": "aleatoire-118",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1400,
+    "w": 1550,
+    "h": 1100,
+    "qty": 8,
+    "weight": 360,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 850,
+    "w": 2050,
+    "h": 1600,
+    "qty": 1,
+    "weight": 110,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 330
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1100,
+    "h": 1600,
+    "qty": 1,
+    "weight": 620,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 6700
+  },
+  "optitunes": {
+   "placed": 10,
+   "trucks": 1,
+   "ml": 6700
+  }
+ },
+ {
+  "id": "lourds-119",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 2,
+    "weight": 620,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 558
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1800,
+    "qty": 2,
+    "weight": 280,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 504
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 800,
+    "qty": 1,
+    "weight": 180,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 324
+   }
+  ],
+  "optimum": {
+   "ml": 3400
+  },
+  "optitunes": {
+   "placed": 5,
+   "trucks": 1,
+   "ml": 3400
+  }
+ },
+ {
+  "id": "multi-120",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 700,
+    "qty": 12,
+    "weight": 210,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 1300,
+    "qty": 6,
+    "weight": 510,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1530
+   },
+   {
+    "id": "OT03",
+    "l": 1140,
+    "w": 1140,
+    "h": 1400,
+    "qty": 1,
+    "weight": 140,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 600,
+    "w": 400,
+    "h": 600,
+    "qty": 18,
+    "weight": 400,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1000,
+    "h": 800,
+    "qty": 3,
+    "weight": 540,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 800,
+    "h": 1600,
+    "qty": 4,
+    "weight": 700,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2100
+   },
+   {
+    "id": "OT07",
+    "l": 1140,
+    "w": 1140,
+    "h": 1500,
+    "qty": 11,
+    "weight": 280,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 840
+   },
+   {
+    "id": "OT08",
+    "l": 1219,
+    "w": 1016,
+    "h": 700,
+    "qty": 11,
+    "weight": 620,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1140,
+    "w": 1140,
+    "h": 1300,
+    "qty": 19,
+    "weight": 450,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1350
+   },
+   {
+    "id": "OT10",
+    "l": 600,
+    "w": 400,
+    "h": 1700,
+    "qty": 13,
+    "weight": 710,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 1219,
+    "w": 1016,
+    "h": 900,
+    "qty": 7,
+    "weight": 500,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT12",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 5,
+    "weight": 280,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 840
+   },
+   {
+    "id": "OT13",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 13,
+    "weight": 690,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT14",
+    "l": 1219,
+    "w": 1016,
+    "h": 1400,
+    "qty": 1,
+    "weight": 170,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 510
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 124,
+   "trucks": 3,
+   "ml": 39632
+  }
+ },
+ {
+  "id": "multi-126",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1400,
+    "qty": 4,
+    "weight": 460,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 18,
+    "weight": 180,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 1400,
+    "qty": 6,
+    "weight": 300,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 800,
+    "w": 600,
+    "h": 800,
+    "qty": 20,
+    "weight": 550,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1000,
+    "h": 600,
+    "qty": 24,
+    "weight": 180,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1000,
+    "h": 1800,
+    "qty": 3,
+    "weight": 400,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1140,
+    "w": 1140,
+    "h": 1400,
+    "qty": 1,
+    "weight": 650,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 76,
+   "trucks": 2,
+   "ml": 21340
+  }
+ },
+ {
+  "id": "aleatoire-130",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2300,
+    "w": 1700,
+    "h": 800,
+    "qty": 4,
+    "weight": 410,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1230
+   },
+   {
+    "id": "OT02",
+    "l": 950,
+    "w": 1500,
+    "h": 1700,
+    "qty": 2,
+    "weight": 60,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 180
+   },
+   {
+    "id": "OT03",
+    "l": 1800,
+    "w": 2050,
+    "h": 700,
+    "qty": 1,
+    "weight": 480,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 6700
+  },
+  "optitunes": {
+   "placed": 7,
+   "trucks": 1,
+   "ml": 4900
+  }
+ },
+ {
+  "id": "multi-132",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1219,
+    "w": 1016,
+    "h": 800,
+    "qty": 4,
+    "weight": 740,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 1500,
+    "qty": 12,
+    "weight": 440,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1320
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 1500,
+    "qty": 11,
+    "weight": 470,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1410
+   },
+   {
+    "id": "OT04",
+    "l": 800,
+    "w": 600,
+    "h": 900,
+    "qty": 21,
+    "weight": 700,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1000,
+    "h": 1700,
+    "qty": 13,
+    "weight": 580,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1740
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 6,
+    "weight": 300,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1000,
+    "h": 1400,
+    "qty": 4,
+    "weight": 620,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 1000,
+    "h": 1700,
+    "qty": 21,
+    "weight": 430,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1200,
+    "h": 1600,
+    "qty": 9,
+    "weight": 270,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 810
+   },
+   {
+    "id": "OT10",
+    "l": 800,
+    "w": 600,
+    "h": 1800,
+    "qty": 2,
+    "weight": 720,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 2160
+   },
+   {
+    "id": "OT11",
+    "l": 1219,
+    "w": 1016,
+    "h": 1600,
+    "qty": 1,
+    "weight": 730,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 2190
+   },
+   {
+    "id": "OT12",
+    "l": 800,
+    "w": 600,
+    "h": 1400,
+    "qty": 1,
+    "weight": 180,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT13",
+    "l": 1000,
+    "w": 1200,
+    "h": 1400,
+    "qty": 1,
+    "weight": 140,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 420
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 106,
+   "trucks": 3,
+   "ml": 38848
+  }
+ },
+ {
+  "id": "longs-135",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 6000,
+    "w": 1000,
+    "h": 1600,
+    "qty": 1,
+    "weight": 550,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 6000,
+    "w": 1000,
+    "h": 1200,
+    "qty": 3,
+    "weight": 390,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1219,
+    "w": 1016,
+    "h": 600,
+    "qty": 1,
+    "weight": 290,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1219,
+    "w": 1016,
+    "h": 1700,
+    "qty": 1,
+    "weight": 190,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 12000
+  },
+  "optitunes": {
+   "placed": 6,
+   "trucks": 1,
+   "ml": 12000
+  }
+ },
+ {
+  "id": "multi-138",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1000,
+    "h": 1400,
+    "qty": 5,
+    "weight": 280,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 1300,
+    "qty": 21,
+    "weight": 340,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1140,
+    "w": 1140,
+    "h": 800,
+    "qty": 16,
+    "weight": 640,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1000,
+    "h": 1100,
+    "qty": 1,
+    "weight": 420,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1000,
+    "w": 1200,
+    "h": 800,
+    "qty": 6,
+    "weight": 600,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1140,
+    "w": 1140,
+    "h": 1500,
+    "qty": 15,
+    "weight": 260,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1219,
+    "w": 1016,
+    "h": 1500,
+    "qty": 4,
+    "weight": 330,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 990
+   },
+   {
+    "id": "OT08",
+    "l": 1140,
+    "w": 1140,
+    "h": 1200,
+    "qty": 1,
+    "weight": 660,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1980
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1000,
+    "h": 1500,
+    "qty": 1,
+    "weight": 610,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 1140,
+    "w": 1140,
+    "h": 900,
+    "qty": 1,
+    "weight": 460,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1380
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 1000,
+    "h": 1300,
+    "qty": 1,
+    "weight": 670,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 72,
+   "trucks": 2,
+   "ml": 23476
+  }
+ },
+ {
+  "id": "aleatoire-142",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1100,
+    "w": 1800,
+    "h": 600,
+    "qty": 1,
+    "weight": 620,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1860
+   },
+   {
+    "id": "OT02",
+    "l": 650,
+    "w": 900,
+    "h": 900,
+    "qty": 8,
+    "weight": 400,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1200
+   },
+   {
+    "id": "OT03",
+    "l": 2000,
+    "w": 2400,
+    "h": 900,
+    "qty": 1,
+    "weight": 400,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1200
+   }
+  ],
+  "optimum": {
+   "ml": 5050
+  },
+  "optitunes": {
+   "placed": 10,
+   "trucks": 1,
+   "ml": 5050
+  }
+ },
+ {
+  "id": "multi-150",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 1500,
+    "qty": 21,
+    "weight": 90,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 1400,
+    "qty": 5,
+    "weight": 560,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1680
+   },
+   {
+    "id": "OT03",
+    "l": 600,
+    "w": 400,
+    "h": 800,
+    "qty": 15,
+    "weight": 110,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1219,
+    "w": 1016,
+    "h": 1600,
+    "qty": 11,
+    "weight": 50,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1000,
+    "w": 1200,
+    "h": 900,
+    "qty": 19,
+    "weight": 400,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1200
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1200,
+    "h": 1800,
+    "qty": 2,
+    "weight": 150,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 450
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1000,
+    "h": 800,
+    "qty": 1,
+    "weight": 230,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 74,
+   "trucks": 2,
+   "ml": 24436
+  }
+ },
+ {
+  "id": "non_gerbables-152",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1000,
+    "h": 900,
+    "qty": 3,
+    "weight": 170,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 510
+   },
+   {
+    "id": "OT02",
+    "l": 1000,
+    "w": 1200,
+    "h": 900,
+    "qty": 1,
+    "weight": 450,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1350
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 1200,
+    "qty": 1,
+    "weight": 580,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1140,
+    "w": 1140,
+    "h": 1800,
+    "qty": 2,
+    "weight": 180,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 800,
+    "w": 600,
+    "h": 1200,
+    "qty": 1,
+    "weight": 50,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 800,
+    "w": 600,
+    "h": 1600,
+    "qty": 1,
+    "weight": 610,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 4080
+  },
+  "optitunes": {
+   "placed": 9,
+   "trucks": 1,
+   "ml": 4140
+  }
+ },
+ {
+  "id": "aleatoire-154",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2000,
+    "w": 1900,
+    "h": 1600,
+    "qty": 2,
+    "weight": 570,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1710
+   },
+   {
+    "id": "OT02",
+    "l": 2050,
+    "w": 1000,
+    "h": 600,
+    "qty": 3,
+    "weight": 700,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 2100
+   }
+  ],
+  "optimum": {
+   "ml": 5800
+  },
+  "optitunes": {
+   "placed": 5,
+   "trucks": 1,
+   "ml": 5800
+  }
+ },
+ {
+  "id": "multi-156",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 800,
+    "w": 600,
+    "h": 900,
+    "qty": 4,
+    "weight": 60,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 1400,
+    "qty": 1,
+    "weight": 740,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1140,
+    "w": 1140,
+    "h": 1000,
+    "qty": 8,
+    "weight": 390,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1000,
+    "w": 1200,
+    "h": 1500,
+    "qty": 2,
+    "weight": 540,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1620
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1000,
+    "h": 1000,
+    "qty": 9,
+    "weight": 620,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1000,
+    "w": 1200,
+    "h": 1800,
+    "qty": 7,
+    "weight": 370,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1219,
+    "w": 1016,
+    "h": 600,
+    "qty": 11,
+    "weight": 440,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1320
+   },
+   {
+    "id": "OT08",
+    "l": 1219,
+    "w": 1016,
+    "h": 800,
+    "qty": 18,
+    "weight": 580,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1000,
+    "h": 1700,
+    "qty": 24,
+    "weight": 620,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1860
+   },
+   {
+    "id": "OT10",
+    "l": 1200,
+    "w": 1000,
+    "h": 1600,
+    "qty": 8,
+    "weight": 210,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 630
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 800,
+    "h": 1500,
+    "qty": 3,
+    "weight": 90,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT12",
+    "l": 1200,
+    "w": 800,
+    "h": 1100,
+    "qty": 1,
+    "weight": 120,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 360
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 96,
+   "trucks": 3,
+   "ml": 36644
+  }
+ },
+ {
+  "id": "non_gerbables-158",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 1600,
+    "qty": 8,
+    "weight": 90,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1000,
+    "w": 1200,
+    "h": 1300,
+    "qty": 15,
+    "weight": 330,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 1,
+    "weight": 180,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 540
+   }
+  ],
+  "optimum": {
+   "ml": 12200
+  },
+  "optitunes": {
+   "placed": 24,
+   "trucks": 1,
+   "ml": 12200
+  }
+ },
+ {
+  "id": "longs-159",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2400,
+    "w": 1200,
+    "h": 1000,
+    "qty": 2,
+    "weight": 420,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1260
+   },
+   {
+    "id": "OT02",
+    "l": 3000,
+    "w": 1500,
+    "h": 1100,
+    "qty": 1,
+    "weight": 650,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 1300,
+    "qty": 11,
+    "weight": 370,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1110
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 1,
+    "weight": 240,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 720
+   }
+  ],
+  "optimum": {
+   "ml": 9000
+  },
+  "optitunes": {
+   "placed": 15,
+   "trucks": 1,
+   "ml": 8400
+  }
+ },
+ {
+  "id": "multi-162",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 1600,
+    "qty": 10,
+    "weight": 780,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1000,
+    "w": 1200,
+    "h": 1400,
+    "qty": 12,
+    "weight": 400,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1200
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 900,
+    "qty": 22,
+    "weight": 750,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2250
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 800,
+    "qty": 3,
+    "weight": 410,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1000,
+    "h": 800,
+    "qty": 4,
+    "weight": 450,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1000,
+    "h": 800,
+    "qty": 12,
+    "weight": 70,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 210
+   },
+   {
+    "id": "OT07",
+    "l": 1219,
+    "w": 1016,
+    "h": 1700,
+    "qty": 1,
+    "weight": 650,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1950
+   },
+   {
+    "id": "OT08",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 13,
+    "weight": 240,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 800,
+    "w": 600,
+    "h": 1700,
+    "qty": 1,
+    "weight": 400,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 78,
+   "trucks": 2,
+   "ml": 22016
+  }
+ },
+ {
+  "id": "non_gerbables-164",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 900,
+    "qty": 2,
+    "weight": 770,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2310
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 1600,
+    "qty": 5,
+    "weight": 210,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 1000,
+    "qty": 3,
+    "weight": 530,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 800,
+    "h": 1100,
+    "qty": 1,
+    "weight": 410,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1230
+   }
+  ],
+  "optimum": {
+   "ml": 4140
+  },
+  "optitunes": {
+   "placed": 11,
+   "trucks": 1,
+   "ml": 4140
+  }
+ },
+ {
+  "id": "aleatoire-166",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 850,
+    "w": 2050,
+    "h": 1300,
+    "qty": 12,
+    "weight": 560,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1100,
+    "w": 1900,
+    "h": 800,
+    "qty": 9,
+    "weight": 400,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1200
+   },
+   {
+    "id": "OT03",
+    "l": 700,
+    "w": 350,
+    "h": 1000,
+    "qty": 8,
+    "weight": 90,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 270
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 2000,
+    "h": 1100,
+    "qty": 1,
+    "weight": 240,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 720
+   },
+   {
+    "id": "OT05",
+    "l": 1750,
+    "w": 2000,
+    "h": 1800,
+    "qty": 1,
+    "weight": 330,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 10750
+  },
+  "optitunes": {
+   "placed": 31,
+   "trucks": 1,
+   "ml": 11050
+  }
+ },
+ {
+  "id": "multi-168",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 17,
+    "weight": 760,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1500,
+    "qty": 23,
+    "weight": 60,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 180
+   },
+   {
+    "id": "OT03",
+    "l": 1140,
+    "w": 1140,
+    "h": 800,
+    "qty": 20,
+    "weight": 490,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1470
+   },
+   {
+    "id": "OT04",
+    "l": 1000,
+    "w": 1200,
+    "h": 1800,
+    "qty": 4,
+    "weight": 90,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 800,
+    "h": 600,
+    "qty": 3,
+    "weight": 650,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1950
+   },
+   {
+    "id": "OT06",
+    "l": 800,
+    "w": 600,
+    "h": 1000,
+    "qty": 2,
+    "weight": 430,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1290
+   },
+   {
+    "id": "OT07",
+    "l": 800,
+    "w": 600,
+    "h": 1200,
+    "qty": 2,
+    "weight": 370,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 1000,
+    "h": 600,
+    "qty": 4,
+    "weight": 790,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1000,
+    "h": 1000,
+    "qty": 4,
+    "weight": 650,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1950
+   },
+   {
+    "id": "OT10",
+    "l": 1200,
+    "w": 1200,
+    "h": 1600,
+    "qty": 16,
+    "weight": 410,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1230
+   },
+   {
+    "id": "OT11",
+    "l": 800,
+    "w": 600,
+    "h": 1600,
+    "qty": 4,
+    "weight": 280,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT12",
+    "l": 800,
+    "w": 600,
+    "h": 1300,
+    "qty": 2,
+    "weight": 160,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 480
+   },
+   {
+    "id": "OT13",
+    "l": 1000,
+    "w": 1200,
+    "h": 700,
+    "qty": 1,
+    "weight": 440,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 102,
+   "trucks": 3,
+   "ml": 35620
+  }
+ },
+ {
+  "id": "longs-171",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 800,
+    "qty": 5,
+    "weight": 700,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2100
+   },
+   {
+    "id": "OT02",
+    "l": 3000,
+    "w": 1500,
+    "h": 1600,
+    "qty": 3,
+    "weight": 180,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 2400,
+    "w": 1200,
+    "h": 1100,
+    "qty": 1,
+    "weight": 760,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 3200,
+    "w": 1600,
+    "h": 800,
+    "qty": 1,
+    "weight": 690,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2070
+   }
+  ],
+  "optimum": {
+   "ml": 13400
+  },
+  "optitunes": {
+   "placed": 10,
+   "trucks": 1,
+   "ml": 12200
+  }
+ },
+ {
+  "id": "multi-174",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1219,
+    "w": 1016,
+    "h": 1700,
+    "qty": 24,
+    "weight": 730,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1500,
+    "qty": 3,
+    "weight": 290,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 1600,
+    "qty": 1,
+    "weight": 740,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 2220
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 22,
+    "weight": 200,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 600,
+    "w": 400,
+    "h": 900,
+    "qty": 13,
+    "weight": 770,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1140,
+    "w": 1140,
+    "h": 1000,
+    "qty": 5,
+    "weight": 680,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1219,
+    "w": 1016,
+    "h": 1700,
+    "qty": 1,
+    "weight": 720,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1219,
+    "w": 1016,
+    "h": 800,
+    "qty": 1,
+    "weight": 750,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 70,
+   "trucks": 2,
+   "ml": 22904
+  }
+ },
+ {
+  "id": "palettes-175",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 700,
+    "qty": 17,
+    "weight": 100,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 3,
+    "weight": 220,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 1300,
+    "qty": 1,
+    "weight": 140,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 420
+   }
+  ],
+  "optimum": {
+   "ml": 6000
+  },
+  "optitunes": {
+   "placed": 21,
+   "trucks": 1,
+   "ml": 5800
+  }
+ },
+ {
+  "id": "aleatoire-178",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1700,
+    "w": 2150,
+    "h": 1000,
+    "qty": 2,
+    "weight": 600,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1800
+   },
+   {
+    "id": "OT02",
+    "l": 1150,
+    "w": 1350,
+    "h": 900,
+    "qty": 5,
+    "weight": 590,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 2200,
+    "w": 1600,
+    "h": 1000,
+    "qty": 2,
+    "weight": 80,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 2000,
+    "w": 1800,
+    "h": 700,
+    "qty": 1,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 10550
+  },
+  "optitunes": {
+   "placed": 10,
+   "trucks": 1,
+   "ml": 10750
+  }
+ },
+ {
+  "id": "multi-180",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1000,
+    "h": 1000,
+    "qty": 6,
+    "weight": 710,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 600,
+    "w": 400,
+    "h": 1500,
+    "qty": 15,
+    "weight": 600,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1800
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 800,
+    "h": 1100,
+    "qty": 3,
+    "weight": 150,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 450
+   },
+   {
+    "id": "OT04",
+    "l": 1140,
+    "w": 1140,
+    "h": 600,
+    "qty": 18,
+    "weight": 240,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1219,
+    "w": 1016,
+    "h": 1600,
+    "qty": 16,
+    "weight": 160,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 480
+   },
+   {
+    "id": "OT06",
+    "l": 1140,
+    "w": 1140,
+    "h": 1100,
+    "qty": 12,
+    "weight": 540,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1219,
+    "w": 1016,
+    "h": 1300,
+    "qty": 3,
+    "weight": 750,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2250
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 1200,
+    "h": 800,
+    "qty": 12,
+    "weight": 470,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1410
+   },
+   {
+    "id": "OT09",
+    "l": 1219,
+    "w": 1016,
+    "h": 1000,
+    "qty": 12,
+    "weight": 510,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 6,
+    "weight": 770,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2310
+   },
+   {
+    "id": "OT11",
+    "l": 1000,
+    "w": 1200,
+    "h": 1400,
+    "qty": 5,
+    "weight": 220,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 660
+   },
+   {
+    "id": "OT12",
+    "l": 1219,
+    "w": 1016,
+    "h": 600,
+    "qty": 24,
+    "weight": 170,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 510
+   },
+   {
+    "id": "OT13",
+    "l": 1000,
+    "w": 1200,
+    "h": 1000,
+    "qty": 3,
+    "weight": 490,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT14",
+    "l": 1200,
+    "w": 800,
+    "h": 600,
+    "qty": 1,
+    "weight": 760,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 136,
+   "trucks": 3,
+   "ml": 33960
+  }
+ },
+ {
+  "id": "palettes-181",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1219,
+    "w": 1016,
+    "h": 1400,
+    "qty": 12,
+    "weight": 80,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1700,
+    "qty": 1,
+    "weight": 80,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 240
+   }
+  ],
+  "optimum": {
+   "ml": 7112
+  },
+  "optitunes": {
+   "placed": 13,
+   "trucks": 1,
+   "ml": 7112
+  }
+ },
+ {
+  "id": "multi-186",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 11,
+    "weight": 310,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 930
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 900,
+    "qty": 4,
+    "weight": 280,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 840
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 700,
+    "qty": 9,
+    "weight": 470,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1410
+   },
+   {
+    "id": "OT04",
+    "l": 1219,
+    "w": 1016,
+    "h": 800,
+    "qty": 8,
+    "weight": 530,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1590
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 800,
+    "h": 1300,
+    "qty": 9,
+    "weight": 280,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1140,
+    "w": 1140,
+    "h": 1600,
+    "qty": 8,
+    "weight": 170,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 10,
+    "weight": 570,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 800,
+    "w": 600,
+    "h": 1200,
+    "qty": 1,
+    "weight": 760,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2280
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1200,
+    "h": 900,
+    "qty": 1,
+    "weight": 410,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 61,
+   "trucks": 2,
+   "ml": 22272
+  }
+ },
+ {
+  "id": "multi-192",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 1100,
+    "qty": 12,
+    "weight": 590,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1770
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 700,
+    "qty": 14,
+    "weight": 180,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 1300,
+    "qty": 5,
+    "weight": 590,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1770
+   },
+   {
+    "id": "OT04",
+    "l": 1219,
+    "w": 1016,
+    "h": 1300,
+    "qty": 21,
+    "weight": 260,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 780
+   },
+   {
+    "id": "OT05",
+    "l": 800,
+    "w": 600,
+    "h": 600,
+    "qty": 14,
+    "weight": 670,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2010
+   },
+   {
+    "id": "OT06",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 7,
+    "weight": 770,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 600,
+    "w": 400,
+    "h": 1100,
+    "qty": 16,
+    "weight": 60,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 800,
+    "w": 600,
+    "h": 1700,
+    "qty": 24,
+    "weight": 530,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1590
+   },
+   {
+    "id": "OT09",
+    "l": 1140,
+    "w": 1140,
+    "h": 900,
+    "qty": 9,
+    "weight": 760,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 2280
+   },
+   {
+    "id": "OT10",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 24,
+    "weight": 270,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 810
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 1200,
+    "h": 1200,
+    "qty": 1,
+    "weight": 630,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1890
+   },
+   {
+    "id": "OT12",
+    "l": 1200,
+    "w": 800,
+    "h": 600,
+    "qty": 1,
+    "weight": 540,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT13",
+    "l": 1200,
+    "w": 1000,
+    "h": 1000,
+    "qty": 1,
+    "weight": 210,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 630
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 149,
+   "trucks": 3,
+   "ml": 34844
+  }
+ },
+ {
+  "id": "longs-195",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 3000,
+    "w": 1500,
+    "h": 1500,
+    "qty": 2,
+    "weight": 270,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 3000,
+    "w": 1500,
+    "h": 1400,
+    "qty": 1,
+    "weight": 240,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 9000
+  },
+  "optitunes": {
+   "placed": 3,
+   "trucks": 1,
+   "ml": 9000
+  }
+ },
+ {
+  "id": "multi-198",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 600,
+    "w": 400,
+    "h": 1800,
+    "qty": 13,
+    "weight": 130,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 390
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 1800,
+    "qty": 24,
+    "weight": 80,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 240
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 600,
+    "qty": 21,
+    "weight": 330,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 1200,
+    "qty": 18,
+    "weight": 750,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 600,
+    "w": 400,
+    "h": 600,
+    "qty": 19,
+    "weight": 300,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 600,
+    "w": 400,
+    "h": 700,
+    "qty": 14,
+    "weight": 670,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2010
+   },
+   {
+    "id": "OT07",
+    "l": 1000,
+    "w": 1200,
+    "h": 1100,
+    "qty": 5,
+    "weight": 610,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 114,
+   "trucks": 2,
+   "ml": 23000
+  }
+ },
+ {
+  "id": "aleatoire-202",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1450,
+    "w": 2400,
+    "h": 1800,
+    "qty": 5,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1080
+   },
+   {
+    "id": "OT02",
+    "l": 1500,
+    "w": 1200,
+    "h": 1800,
+    "qty": 1,
+    "weight": 480,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1350,
+    "w": 1350,
+    "h": 1800,
+    "qty": 1,
+    "weight": 670,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2010
+   }
+  ],
+  "optimum": {
+   "ml": 9800
+  },
+  "optitunes": {
+   "placed": 7,
+   "trucks": 1,
+   "ml": 9800
+  }
+ },
+ {
+  "id": "multi-204",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 1200,
+    "qty": 9,
+    "weight": 610,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1830
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1600,
+    "qty": 18,
+    "weight": 280,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1219,
+    "w": 1016,
+    "h": 1700,
+    "qty": 10,
+    "weight": 430,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1290
+   },
+   {
+    "id": "OT04",
+    "l": 1219,
+    "w": 1016,
+    "h": 1700,
+    "qty": 1,
+    "weight": 490,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1000,
+    "h": 1800,
+    "qty": 8,
+    "weight": 730,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2190
+   },
+   {
+    "id": "OT06",
+    "l": 800,
+    "w": 600,
+    "h": 1100,
+    "qty": 11,
+    "weight": 200,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 600
+   },
+   {
+    "id": "OT07",
+    "l": 600,
+    "w": 400,
+    "h": 600,
+    "qty": 9,
+    "weight": 400,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1200
+   },
+   {
+    "id": "OT08",
+    "l": 1000,
+    "w": 1200,
+    "h": 1400,
+    "qty": 10,
+    "weight": 770,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1000,
+    "w": 1200,
+    "h": 600,
+    "qty": 7,
+    "weight": 300,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 900
+   },
+   {
+    "id": "OT10",
+    "l": 1219,
+    "w": 1016,
+    "h": 800,
+    "qty": 6,
+    "weight": 740,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 800,
+    "h": 1100,
+    "qty": 15,
+    "weight": 300,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT12",
+    "l": 1219,
+    "w": 1016,
+    "h": 600,
+    "qty": 3,
+    "weight": 120,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 360
+   },
+   {
+    "id": "OT13",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 5,
+    "weight": 410,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1230
+   },
+   {
+    "id": "OT14",
+    "l": 1219,
+    "w": 1016,
+    "h": 1100,
+    "qty": 1,
+    "weight": 390,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 113,
+   "trucks": 3,
+   "ml": 33744
+  }
+ },
+ {
+  "id": "multi-210",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 15,
+    "weight": 580,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1740
+   },
+   {
+    "id": "OT02",
+    "l": 1140,
+    "w": 1140,
+    "h": 1600,
+    "qty": 5,
+    "weight": 700,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2100
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 800,
+    "h": 1600,
+    "qty": 5,
+    "weight": 390,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 800,
+    "w": 600,
+    "h": 1400,
+    "qty": 12,
+    "weight": 210,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 5,
+    "weight": 320,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1000,
+    "h": 1100,
+    "qty": 16,
+    "weight": 120,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 360
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1000,
+    "h": 1800,
+    "qty": 1,
+    "weight": 90,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1140,
+    "w": 1140,
+    "h": 1600,
+    "qty": 1,
+    "weight": 100,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 800,
+    "h": 1200,
+    "qty": 3,
+    "weight": 640,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 1200,
+    "w": 1000,
+    "h": 1300,
+    "qty": 2,
+    "weight": 370,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 1219,
+    "w": 1016,
+    "h": 1500,
+    "qty": 1,
+    "weight": 140,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 420
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 66,
+   "trucks": 2,
+   "ml": 23468
+  }
+ },
+ {
+  "id": "aleatoire-214",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2300,
+    "w": 350,
+    "h": 1500,
+    "qty": 6,
+    "weight": 750,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1350,
+    "w": 1750,
+    "h": 1300,
+    "qty": 9,
+    "weight": 310,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 2300,
+    "w": 850,
+    "h": 600,
+    "qty": 1,
+    "weight": 70,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 210
+   },
+   {
+    "id": "OT04",
+    "l": 2250,
+    "w": 1100,
+    "h": 800,
+    "qty": 1,
+    "weight": 160,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 8850
+  },
+  "optitunes": {
+   "placed": 17,
+   "trucks": 1,
+   "ml": 8050
+  }
+ },
+ {
+  "id": "multi-216",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1219,
+    "w": 1016,
+    "h": 1300,
+    "qty": 22,
+    "weight": 550,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1650
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1600,
+    "qty": 16,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1219,
+    "w": 1016,
+    "h": 1500,
+    "qty": 7,
+    "weight": 660,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1140,
+    "w": 1140,
+    "h": 1300,
+    "qty": 14,
+    "weight": 520,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 2,
+    "weight": 760,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1219,
+    "w": 1016,
+    "h": 1600,
+    "qty": 11,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1219,
+    "w": 1016,
+    "h": 1000,
+    "qty": 4,
+    "weight": 160,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 480
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 800,
+    "h": 1400,
+    "qty": 2,
+    "weight": 530,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 4,
+    "weight": 770,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2310
+   },
+   {
+    "id": "OT10",
+    "l": 1000,
+    "w": 1200,
+    "h": 700,
+    "qty": 1,
+    "weight": 50,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 1140,
+    "w": 1140,
+    "h": 600,
+    "qty": 1,
+    "weight": 560,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1680
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 84,
+   "trucks": 3,
+   "ml": 37580
+  }
+ },
+ {
+  "id": "longs-219",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2000,
+    "w": 1000,
+    "h": 1000,
+    "qty": 12,
+    "weight": 150,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 2400,
+    "w": 1200,
+    "h": 800,
+    "qty": 1,
+    "weight": 710,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 7200
+  },
+  "optitunes": {
+   "placed": 13,
+   "trucks": 1,
+   "ml": 7200
+  }
+ },
+ {
+  "id": "multi-222",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1000,
+    "h": 600,
+    "qty": 4,
+    "weight": 530,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1590
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 1600,
+    "qty": 1,
+    "weight": 490,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1140,
+    "w": 1140,
+    "h": 1800,
+    "qty": 5,
+    "weight": 400,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1200
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 24,
+    "weight": 210,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 630
+   },
+   {
+    "id": "OT05",
+    "l": 1140,
+    "w": 1140,
+    "h": 900,
+    "qty": 19,
+    "weight": 490,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1470
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 800,
+    "h": 1300,
+    "qty": 8,
+    "weight": 640,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1219,
+    "w": 1016,
+    "h": 900,
+    "qty": 4,
+    "weight": 470,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 800,
+    "w": 600,
+    "h": 1600,
+    "qty": 6,
+    "weight": 90,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 270
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1000,
+    "h": 1700,
+    "qty": 1,
+    "weight": 360,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 600,
+    "w": 400,
+    "h": 600,
+    "qty": 1,
+    "weight": 320,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 960
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 73,
+   "trucks": 2,
+   "ml": 21428
+  }
+ },
+ {
+  "id": "non_gerbables-224",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1300,
+    "qty": 10,
+    "weight": 720,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 1300,
+    "qty": 1,
+    "weight": 510,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 1100,
+    "qty": 1,
+    "weight": 250,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 7200
+  },
+  "optitunes": {
+   "placed": 12,
+   "trucks": 1,
+   "ml": 7200
+  }
+ },
+ {
+  "id": "multi-228",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 1300,
+    "qty": 11,
+    "weight": 500,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1500
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1000,
+    "h": 1600,
+    "qty": 12,
+    "weight": 50,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 150
+   },
+   {
+    "id": "OT03",
+    "l": 1219,
+    "w": 1016,
+    "h": 1400,
+    "qty": 23,
+    "weight": 660,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1000,
+    "h": 700,
+    "qty": 15,
+    "weight": 560,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1680
+   },
+   {
+    "id": "OT05",
+    "l": 600,
+    "w": 400,
+    "h": 1700,
+    "qty": 23,
+    "weight": 650,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1950
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1000,
+    "h": 900,
+    "qty": 8,
+    "weight": 120,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 360
+   },
+   {
+    "id": "OT07",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 7,
+    "weight": 590,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1000,
+    "w": 1200,
+    "h": 1600,
+    "qty": 10,
+    "weight": 240,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1200,
+    "h": 1100,
+    "qty": 9,
+    "weight": 740,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2220
+   },
+   {
+    "id": "OT10",
+    "l": 1200,
+    "w": 1200,
+    "h": 1800,
+    "qty": 1,
+    "weight": 180,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 540
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 119,
+   "trucks": 3,
+   "ml": 28592
+  }
+ },
+ {
+  "id": "longs-231",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 800,
+    "w": 600,
+    "h": 700,
+    "qty": 15,
+    "weight": 200,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 600
+   },
+   {
+    "id": "OT02",
+    "l": 3200,
+    "w": 1600,
+    "h": 900,
+    "qty": 1,
+    "weight": 660,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 1800,
+    "qty": 1,
+    "weight": 790,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2370
+   },
+   {
+    "id": "OT04",
+    "l": 4000,
+    "w": 1200,
+    "h": 1500,
+    "qty": 1,
+    "weight": 440,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1320
+   }
+  ],
+  "optimum": {
+   "ml": 7200
+  },
+  "optitunes": {
+   "placed": 18,
+   "trucks": 1,
+   "ml": 7200
+  }
+ },
+ {
+  "id": "aleatoire-232",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 550,
+    "w": 1600,
+    "h": 1100,
+    "qty": 7,
+    "weight": 240,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1900,
+    "w": 1400,
+    "h": 900,
+    "qty": 10,
+    "weight": 720,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2160
+   },
+   {
+    "id": "OT03",
+    "l": 1850,
+    "w": 1600,
+    "h": 800,
+    "qty": 1,
+    "weight": 340,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 9400
+  },
+  "optitunes": {
+   "placed": 18,
+   "trucks": 1,
+   "ml": 9600
+  }
+ },
+ {
+  "id": "multi-234",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 700,
+    "qty": 18,
+    "weight": 480,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1440
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 1700,
+    "qty": 24,
+    "weight": 360,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1219,
+    "w": 1016,
+    "h": 900,
+    "qty": 2,
+    "weight": 70,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 800,
+    "h": 1600,
+    "qty": 9,
+    "weight": 600,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1800
+   },
+   {
+    "id": "OT05",
+    "l": 1219,
+    "w": 1016,
+    "h": 1100,
+    "qty": 7,
+    "weight": 570,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 800,
+    "h": 600,
+    "qty": 7,
+    "weight": 100,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 600,
+    "w": 400,
+    "h": 700,
+    "qty": 3,
+    "weight": 110,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 600,
+    "w": 400,
+    "h": 1500,
+    "qty": 9,
+    "weight": 770,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2310
+   },
+   {
+    "id": "OT09",
+    "l": 1140,
+    "w": 1140,
+    "h": 1000,
+    "qty": 1,
+    "weight": 370,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1110
+   }
+  ],
+  "optimum": {
+   "trucks": 2
+  },
+  "optitunes": {
+   "placed": 80,
+   "trucks": 2,
+   "ml": 17232
+  }
+ },
+ {
+  "id": "non_gerbables-236",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1000,
+    "h": 1400,
+    "qty": 11,
+    "weight": 560,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 600,
+    "w": 400,
+    "h": 700,
+    "qty": 2,
+    "weight": 270,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 800,
+    "qty": 1,
+    "weight": 200,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 700,
+    "qty": 1,
+    "weight": 290,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 7000
+  },
+  "optitunes": {
+   "placed": 15,
+   "trucks": 1,
+   "ml": 7000
+  }
+ },
+ {
+  "id": "multi-240",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 600,
+    "w": 400,
+    "h": 1400,
+    "qty": 19,
+    "weight": 630,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1890
+   },
+   {
+    "id": "OT02",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 20,
+    "weight": 130,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 390
+   },
+   {
+    "id": "OT03",
+    "l": 1219,
+    "w": 1016,
+    "h": 1200,
+    "qty": 6,
+    "weight": 470,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1000,
+    "w": 1200,
+    "h": 800,
+    "qty": 21,
+    "weight": 370,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 5,
+    "weight": 740,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1219,
+    "w": 1016,
+    "h": 900,
+    "qty": 18,
+    "weight": 700,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2100
+   },
+   {
+    "id": "OT07",
+    "l": 1219,
+    "w": 1016,
+    "h": 900,
+    "qty": 11,
+    "weight": 670,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1000,
+    "w": 1200,
+    "h": 600,
+    "qty": 17,
+    "weight": 730,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 2190
+   },
+   {
+    "id": "OT09",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 19,
+    "weight": 430,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1290
+   },
+   {
+    "id": "OT10",
+    "l": 1200,
+    "w": 1200,
+    "h": 1400,
+    "qty": 1,
+    "weight": 110,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 1000,
+    "h": 1700,
+    "qty": 1,
+    "weight": 80,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 240
+   },
+   {
+    "id": "OT12",
+    "l": 1140,
+    "w": 1140,
+    "h": 1500,
+    "qty": 1,
+    "weight": 290,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 870
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 139,
+   "trucks": 3,
+   "ml": 36712
+  }
+ },
+ {
+  "id": "longs-243",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2000,
+    "w": 1000,
+    "h": 1700,
+    "qty": 1,
+    "weight": 60,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 2000,
+    "w": 1000,
+    "h": 1300,
+    "qty": 9,
+    "weight": 600,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 6000
+  },
+  "optitunes": {
+   "placed": 10,
+   "trucks": 1,
+   "ml": 6000
+  }
+ },
+ {
+  "id": "lourds-245",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1800,
+    "qty": 7,
+    "weight": 610,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 549
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1300,
+    "qty": 1,
+    "weight": 420,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 378
+   }
+  ],
+  "optimum": {
+   "ml": 4800
+  },
+  "optitunes": {
+   "placed": 8,
+   "trucks": 1,
+   "ml": 4800
+  }
+ },
+ {
+  "id": "multi-246",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 800,
+    "qty": 19,
+    "weight": 160,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 480
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 1500,
+    "qty": 6,
+    "weight": 780,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 1800,
+    "qty": 11,
+    "weight": 640,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1000,
+    "w": 1200,
+    "h": 900,
+    "qty": 17,
+    "weight": 110,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 330
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 11,
+    "weight": 370,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1110
+   },
+   {
+    "id": "OT06",
+    "l": 600,
+    "w": 400,
+    "h": 1100,
+    "qty": 9,
+    "weight": 430,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1290
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 800,
+    "h": 700,
+    "qty": 17,
+    "weight": 500,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1500
+   },
+   {
+    "id": "OT08",
+    "l": 1200,
+    "w": 1200,
+    "h": 1500,
+    "qty": 2,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1080
+   },
+   {
+    "id": "OT09",
+    "l": 1219,
+    "w": 1016,
+    "h": 1100,
+    "qty": 6,
+    "weight": 380,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 600,
+    "w": 400,
+    "h": 1400,
+    "qty": 11,
+    "weight": 120,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 360
+   },
+   {
+    "id": "OT11",
+    "l": 600,
+    "w": 400,
+    "h": 1500,
+    "qty": 23,
+    "weight": 460,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT12",
+    "l": 1200,
+    "w": 1200,
+    "h": 1100,
+    "qty": 2,
+    "weight": 540,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT13",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 18,
+    "weight": 140,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 420
+   },
+   {
+    "id": "OT14",
+    "l": 1200,
+    "w": 1000,
+    "h": 1000,
+    "qty": 5,
+    "weight": 60,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 157,
+   "trucks": 4,
+   "ml": 48776
+  }
+ },
+ {
+  "id": "multi-252",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 1200,
+    "h": 1500,
+    "qty": 20,
+    "weight": 450,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1300,
+    "qty": 16,
+    "weight": 680,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2040
+   },
+   {
+    "id": "OT03",
+    "l": 600,
+    "w": 400,
+    "h": 1100,
+    "qty": 17,
+    "weight": 60,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 180
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 22,
+    "weight": 660,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1980
+   },
+   {
+    "id": "OT05",
+    "l": 1000,
+    "w": 1200,
+    "h": 600,
+    "qty": 11,
+    "weight": 750,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 800,
+    "w": 600,
+    "h": 1300,
+    "qty": 15,
+    "weight": 230,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 690
+   },
+   {
+    "id": "OT07",
+    "l": 800,
+    "w": 600,
+    "h": 1400,
+    "qty": 1,
+    "weight": 570,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 102,
+   "trucks": 3,
+   "ml": 36528
+  }
+ },
+ {
+  "id": "aleatoire-256",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2350,
+    "w": 1850,
+    "h": 1800,
+    "qty": 1,
+    "weight": 170,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1550,
+    "w": 1900,
+    "h": 1100,
+    "qty": 3,
+    "weight": 620,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1860
+   },
+   {
+    "id": "OT03",
+    "l": 1400,
+    "w": 2050,
+    "h": 1200,
+    "qty": 1,
+    "weight": 310,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1400,
+    "w": 1550,
+    "h": 800,
+    "qty": 2,
+    "weight": 510,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1530
+   }
+  ],
+  "optimum": {
+   "ml": 7750
+  },
+  "optitunes": {
+   "placed": 7,
+   "trucks": 1,
+   "ml": 6350
+  }
+ },
+ {
+  "id": "multi-258",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1219,
+    "w": 1016,
+    "h": 900,
+    "qty": 21,
+    "weight": 730,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 2,
+    "weight": 580,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 22,
+    "weight": 220,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1140,
+    "w": 1140,
+    "h": 1200,
+    "qty": 23,
+    "weight": 60,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 20,
+    "weight": 390,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1170
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1000,
+    "h": 1500,
+    "qty": 14,
+    "weight": 390,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1170
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1000,
+    "h": 800,
+    "qty": 2,
+    "weight": 640,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 10,
+    "weight": 570,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1710
+   },
+   {
+    "id": "OT09",
+    "l": 800,
+    "w": 600,
+    "h": 1600,
+    "qty": 7,
+    "weight": 220,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 660
+   },
+   {
+    "id": "OT10",
+    "l": 600,
+    "w": 400,
+    "h": 1200,
+    "qty": 4,
+    "weight": 750,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 1000,
+    "h": 1100,
+    "qty": 1,
+    "weight": 160,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 480
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 126,
+   "trucks": 4,
+   "ml": 53016
+  }
+ },
+ {
+  "id": "longs-261",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2400,
+    "w": 1200,
+    "h": 1300,
+    "qty": 15,
+    "weight": 320,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 960
+   },
+   {
+    "id": "OT02",
+    "l": 3000,
+    "w": 1500,
+    "h": 600,
+    "qty": 1,
+    "weight": 140,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 420
+   }
+  ],
+  "optimum": {
+   "ml": 12600
+  },
+  "optitunes": {
+   "placed": 16,
+   "trucks": 1,
+   "ml": 12600
+  }
+ },
+ {
+  "id": "aleatoire-262",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1750,
+    "w": 800,
+    "h": 1700,
+    "qty": 12,
+    "weight": 200,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 600
+   },
+   {
+    "id": "OT02",
+    "l": 1550,
+    "w": 1600,
+    "h": 1800,
+    "qty": 1,
+    "weight": 200,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 8550
+  },
+  "optitunes": {
+   "placed": 13,
+   "trucks": 1,
+   "ml": 8550
+  }
+ },
+ {
+  "id": "palettes-265",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1219,
+    "w": 1016,
+    "h": 600,
+    "qty": 6,
+    "weight": 560,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1680
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 1,
+    "weight": 600,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 700,
+    "qty": 1,
+    "weight": 280,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 4232
+  },
+  "optitunes": {
+   "placed": 8,
+   "trucks": 1,
+   "ml": 4048
+  }
+ },
+ {
+  "id": "longs-267",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 4000,
+    "w": 1200,
+    "h": 1200,
+    "qty": 3,
+    "weight": 340,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 2400,
+    "w": 1200,
+    "h": 1300,
+    "qty": 1,
+    "weight": 160,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 480
+   }
+  ],
+  "optimum": {
+   "ml": 5200
+  },
+  "optitunes": {
+   "placed": 4,
+   "trucks": 1,
+   "ml": 4000
+  }
+ },
+ {
+  "id": "lourds-269",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 7200,
+   "W": 2450,
+   "H": 2400,
+   "payload": 5500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 600,
+    "qty": 2,
+    "weight": 250,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 225
+   },
+   {
+    "id": "OT02",
+    "l": 1140,
+    "w": 1140,
+    "h": 1700,
+    "qty": 6,
+    "weight": 770,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 693
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 1000,
+    "qty": 1,
+    "weight": 330,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 297
+   }
+  ],
+  "optimum": {
+   "ml": 5700
+  },
+  "optitunes": {
+   "placed": 9,
+   "trucks": 1,
+   "ml": 4560
+  }
+ },
+ {
+  "id": "multi-270",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 900,
+    "qty": 9,
+    "weight": 320,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 960
+   },
+   {
+    "id": "OT02",
+    "l": 1200,
+    "w": 800,
+    "h": 1800,
+    "qty": 22,
+    "weight": 700,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 2100
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 800,
+    "qty": 15,
+    "weight": 560,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1140,
+    "w": 1140,
+    "h": 1800,
+    "qty": 2,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1200,
+    "h": 1300,
+    "qty": 23,
+    "weight": 510,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 800,
+    "h": 1200,
+    "qty": 5,
+    "weight": 610,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1000,
+    "h": 1400,
+    "qty": 5,
+    "weight": 390,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1170
+   },
+   {
+    "id": "OT08",
+    "l": 1000,
+    "w": 1200,
+    "h": 1200,
+    "qty": 3,
+    "weight": 710,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2130
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 1000,
+    "h": 1000,
+    "qty": 12,
+    "weight": 520,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1560
+   },
+   {
+    "id": "OT10",
+    "l": 800,
+    "w": 600,
+    "h": 600,
+    "qty": 20,
+    "weight": 690,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 800,
+    "h": 1800,
+    "qty": 24,
+    "weight": 320,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 960
+   },
+   {
+    "id": "OT12",
+    "l": 1000,
+    "w": 1200,
+    "h": 1100,
+    "qty": 3,
+    "weight": 90,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 270
+   },
+   {
+    "id": "OT13",
+    "l": 1140,
+    "w": 1140,
+    "h": 600,
+    "qty": 7,
+    "weight": 480,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT14",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 1,
+    "weight": 430,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1290
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 151,
+   "trucks": 4,
+   "ml": 50556
+  }
+ },
+ {
+  "id": "multi-276",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2450,
+   "H": 2700,
+   "payload": 24000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 1600,
+    "qty": 16,
+    "weight": 300,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 900
+   },
+   {
+    "id": "OT02",
+    "l": 1000,
+    "w": 1200,
+    "h": 1800,
+    "qty": 10,
+    "weight": 250,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1000,
+    "h": 1600,
+    "qty": 13,
+    "weight": 300,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 900
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1200,
+    "h": 1500,
+    "qty": 20,
+    "weight": 100,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 600,
+    "w": 400,
+    "h": 900,
+    "qty": 20,
+    "weight": 140,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 1200,
+    "w": 1000,
+    "h": 1500,
+    "qty": 2,
+    "weight": 310,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 930
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 800,
+    "h": 1200,
+    "qty": 1,
+    "weight": 90,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 270
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 82,
+   "trucks": 3,
+   "ml": 35720
+  }
+ },
+ {
+  "id": "palettes-277",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1000,
+    "w": 1200,
+    "h": 600,
+    "qty": 6,
+    "weight": 390,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 800,
+    "w": 600,
+    "h": 600,
+    "qty": 5,
+    "weight": 670,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1000,
+    "w": 1200,
+    "h": 1800,
+    "qty": 1,
+    "weight": 510,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1530
+   }
+  ],
+  "optimum": {
+   "ml": 4000
+  },
+  "optitunes": {
+   "placed": 12,
+   "trucks": 1,
+   "ml": 4000
+  }
+ },
+ {
+  "id": "longs-279",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2500,
+    "w": 1250,
+    "h": 900,
+    "qty": 3,
+    "weight": 390,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1170
+   },
+   {
+    "id": "OT02",
+    "l": 3200,
+    "w": 1600,
+    "h": 1400,
+    "qty": 1,
+    "weight": 440,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "ml": 8200
+  },
+  "optitunes": {
+   "placed": 4,
+   "trucks": 1,
+   "ml": 8200
+  }
+ },
+ {
+  "id": "multi-282",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 600,
+    "w": 400,
+    "h": 1000,
+    "qty": 23,
+    "weight": 270,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 810
+   },
+   {
+    "id": "OT02",
+    "l": 1140,
+    "w": 1140,
+    "h": 1800,
+    "qty": 21,
+    "weight": 560,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1680
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 800,
+    "h": 1100,
+    "qty": 22,
+    "weight": 590,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 20,
+    "weight": 750,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT05",
+    "l": 800,
+    "w": 600,
+    "h": 1100,
+    "qty": 10,
+    "weight": 530,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1590
+   },
+   {
+    "id": "OT06",
+    "l": 1000,
+    "w": 1200,
+    "h": 1700,
+    "qty": 6,
+    "weight": 750,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 2250
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 800,
+    "h": 1000,
+    "qty": 16,
+    "weight": 290,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 870
+   },
+   {
+    "id": "OT08",
+    "l": 800,
+    "w": 600,
+    "h": 900,
+    "qty": 13,
+    "weight": 700,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 2100
+   },
+   {
+    "id": "OT09",
+    "l": 1200,
+    "w": 800,
+    "h": 1600,
+    "qty": 5,
+    "weight": 420,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 1219,
+    "w": 1016,
+    "h": 1000,
+    "qty": 9,
+    "weight": 650,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT11",
+    "l": 1000,
+    "w": 1200,
+    "h": 800,
+    "qty": 9,
+    "weight": 160,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT12",
+    "l": 1219,
+    "w": 1016,
+    "h": 1100,
+    "qty": 12,
+    "weight": 90,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 270
+   },
+   {
+    "id": "OT13",
+    "l": 1200,
+    "w": 800,
+    "h": 1000,
+    "qty": 9,
+    "weight": 780,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT14",
+    "l": 1200,
+    "w": 800,
+    "h": 1200,
+    "qty": 9,
+    "weight": 570,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   }
+  ],
+  "optimum": {
+   "trucks": 4
+  },
+  "optitunes": {
+   "placed": 184,
+   "trucks": 4,
+   "ml": 48872
+  }
+ },
+ {
+  "id": "multi-288",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1200,
+    "w": 800,
+    "h": 1700,
+    "qty": 5,
+    "weight": 250,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 9,
+    "weight": 120,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 800,
+    "h": 700,
+    "qty": 24,
+    "weight": 740,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 600,
+    "w": 400,
+    "h": 1300,
+    "qty": 4,
+    "weight": 200,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 600
+   },
+   {
+    "id": "OT05",
+    "l": 1219,
+    "w": 1016,
+    "h": 600,
+    "qty": 3,
+    "weight": 460,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1380
+   },
+   {
+    "id": "OT06",
+    "l": 1140,
+    "w": 1140,
+    "h": 1600,
+    "qty": 6,
+    "weight": 620,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1000,
+    "h": 1400,
+    "qty": 5,
+    "weight": 210,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 600,
+    "w": 400,
+    "h": 1400,
+    "qty": 11,
+    "weight": 330,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT09",
+    "l": 1140,
+    "w": 1140,
+    "h": 900,
+    "qty": 2,
+    "weight": 90,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 1200,
+    "w": 800,
+    "h": 1800,
+    "qty": 16,
+    "weight": 160,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 480
+   },
+   {
+    "id": "OT11",
+    "l": 800,
+    "w": 600,
+    "h": 1000,
+    "qty": 8,
+    "weight": 420,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT12",
+    "l": 1140,
+    "w": 1140,
+    "h": 800,
+    "qty": 14,
+    "weight": 350,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1050
+   },
+   {
+    "id": "OT13",
+    "l": 1219,
+    "w": 1016,
+    "h": 1500,
+    "qty": 2,
+    "weight": 680,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT14",
+    "l": 600,
+    "w": 400,
+    "h": 700,
+    "qty": 3,
+    "weight": 570,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 1710
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 112,
+   "trucks": 3,
+   "ml": 32896
+  }
+ },
+ {
+  "id": "non_gerbables-290",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 9600,
+   "W": 2450,
+   "H": 2600,
+   "payload": 9500
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1140,
+    "w": 1140,
+    "h": 1000,
+    "qty": 8,
+    "weight": 590,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1770
+   },
+   {
+    "id": "OT02",
+    "l": 1140,
+    "w": 1140,
+    "h": 1400,
+    "qty": 5,
+    "weight": 690,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 1,
+    "weight": 320,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 960
+   }
+  ],
+  "optimum": {
+   "ml": 8040
+  },
+  "optitunes": {
+   "placed": 14,
+   "trucks": 1,
+   "ml": 8040
+  }
+ },
+ {
+  "id": "aleatoire-298",
+  "maxVehicles": 1,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 2350,
+    "w": 1200,
+    "h": 900,
+    "qty": 2,
+    "weight": 710,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 2400,
+    "w": 1700,
+    "h": 1600,
+    "qty": 1,
+    "weight": 790,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT03",
+    "l": 2100,
+    "w": 400,
+    "h": 1100,
+    "qty": 1,
+    "weight": 490,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1750,
+    "w": 1700,
+    "h": 1300,
+    "qty": 2,
+    "weight": 120,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 360
+   },
+   {
+    "id": "OT05",
+    "l": 800,
+    "w": 1050,
+    "h": 800,
+    "qty": 1,
+    "weight": 110,
+    "stackable": true,
+    "levels": 3,
+    "maxLoad": 330
+   }
+  ],
+  "optimum": {
+   "ml": 8250
+  },
+  "optitunes": {
+   "placed": 7,
+   "trucks": 1,
+   "ml": 7450
+  }
+ },
+ {
+  "id": "multi-300",
+  "maxVehicles": 8,
+  "vehicle": {
+   "L": 13600,
+   "W": 2480,
+   "H": 2600,
+   "payload": 25000
+  },
+  "orders": [
+   {
+    "id": "OT01",
+    "l": 1219,
+    "w": 1016,
+    "h": 1800,
+    "qty": 2,
+    "weight": 480,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT02",
+    "l": 1140,
+    "w": 1140,
+    "h": 900,
+    "qty": 4,
+    "weight": 130,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 390
+   },
+   {
+    "id": "OT03",
+    "l": 800,
+    "w": 600,
+    "h": 1700,
+    "qty": 6,
+    "weight": 760,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": null
+   },
+   {
+    "id": "OT04",
+    "l": 1200,
+    "w": 1000,
+    "h": 600,
+    "qty": 8,
+    "weight": 350,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1050
+   },
+   {
+    "id": "OT05",
+    "l": 1200,
+    "w": 1200,
+    "h": 1700,
+    "qty": 7,
+    "weight": 80,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT06",
+    "l": 800,
+    "w": 600,
+    "h": 1700,
+    "qty": 19,
+    "weight": 420,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1260
+   },
+   {
+    "id": "OT07",
+    "l": 1200,
+    "w": 1200,
+    "h": 600,
+    "qty": 4,
+    "weight": 360,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": null
+   },
+   {
+    "id": "OT08",
+    "l": 1000,
+    "w": 1200,
+    "h": 700,
+    "qty": 12,
+    "weight": 590,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1770
+   },
+   {
+    "id": "OT09",
+    "l": 1219,
+    "w": 1016,
+    "h": 1600,
+    "qty": 10,
+    "weight": 420,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": null
+   },
+   {
+    "id": "OT10",
+    "l": 1200,
+    "w": 800,
+    "h": 1700,
+    "qty": 8,
+    "weight": 430,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1290
+   },
+   {
+    "id": "OT11",
+    "l": 1200,
+    "w": 1200,
+    "h": 1300,
+    "qty": 1,
+    "weight": 630,
+    "stackable": true,
+    "levels": 4,
+    "maxLoad": 1890
+   },
+   {
+    "id": "OT12",
+    "l": 1200,
+    "w": 1000,
+    "h": 1300,
+    "qty": 2,
+    "weight": 510,
+    "stackable": true,
+    "levels": 2,
+    "maxLoad": 1530
+   },
+   {
+    "id": "OT13",
+    "l": 1140,
+    "w": 1140,
+    "h": 800,
+    "qty": 2,
+    "weight": 140,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 420
+   },
+   {
+    "id": "OT14",
+    "l": 1140,
+    "w": 1140,
+    "h": 1200,
+    "qty": 1,
+    "weight": 540,
+    "stackable": false,
+    "levels": null,
+    "maxLoad": 1620
+   }
+  ],
+  "optimum": {
+   "trucks": 3
+  },
+  "optitunes": {
+   "placed": 86,
+   "trucks": 3,
+   "ml": 33852
+  }
+ }
+]
