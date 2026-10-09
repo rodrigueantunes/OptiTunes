@@ -17,7 +17,7 @@ Le résultat n'est donc pas seulement un taux de remplissage.
 
 OptiTunes produit un plan de chargement spatial, contrôlé, visualisable en 2D et en 3D, avec métrage linéaire, gestion du gerbage, des arrêts, des contraintes physiques et, si nécessaire, de plusieurs véhicules. Chaque résultat est expliqué pas à pas, chiffres à l'appui.
 
-> Version actuelle : `0.0.7`
+> Version actuelle : `0.0.8`
 > Plateforme : `Windows`
 > Runtime : `.NET 10`
 > Interface : `WPF`
@@ -265,8 +265,13 @@ Valeurs prudentes lorsque la donnée manque :
 ```text
 GERBABLE vide            → non gerbable
 NIVEAUX_MAX vide         → 1 gerbage
-CHARGE_MAX_DESSUS vide   → poids de ses propres gerbages
+CHARGE_MAX_DESSUS vide   → poids de ses propres gerbages (charge estimée)
 ```
+
+La charge estimée est une hypothèse, pas une garantie :
+
+- le contrôle **« Charge supportable estimée »** signale chaque ordre dont des unités portent une charge sans `CHARGE_MAX_DESSUS` ;
+- la règle de calcul **« Gerber sans charge renseignée »** (cochée par défaut) peut être décochée : rien n'est alors posé sur une unité dont la charge supportable est inconnue.
 
 ---
 
@@ -431,11 +436,31 @@ Les deux sens de pose (longueur dans le sens du camion ou en travers) sont compa
 
 ### Nombre minimum de camions
 
+Le métrage ordre par ordre n'est qu'une estimation : OptiTunes peut gerber des ordres différents l'un sur l'autre. Le minimum se calcule donc sur toutes les unités confondues, à partir des emplacements au sol :
+
 ```text
+Emplacements au sol au minimum =
+    unités seules (ne reçoivent rien, ne montent sur rien)
+  + ARRONDI.SUP( autres unités / plus haute pile possible )
+
+Surface au sol minimale =
+    emprise des unités seules
+  + piles × plus petite emprise
+
 Camions minimum =
 ARRONDI.SUP( MAX( poids / charge utile ;
                   volume / volume du camion ;
-                  ML équivalent / longueur du camion ) )
+                  surface au sol minimale / surface chargeable ) )
+```
+
+C'est une borne basse : aucun plan ne peut utiliser moins de camions. Quand le plan l'atteint, le nombre de camions est optimal, et le détail du calcul l'indique.
+
+Exemple : 36 palettes gerbables sur 2 niveaux et 4 non gerbables, 1 301 × 1 150 mm, dans un camion de 13,60 × 2,40 m.
+
+```text
+Emplacements : 4 + ⌈36 ÷ 2⌉ = 22
+Surface      : 4 × 1,496 + 18 × 1,495 = 32,895 m²  >  32,64 m²
+Camions      : 2 au minimum
 ```
 
 ---
@@ -587,7 +612,7 @@ Le résultat produit par le moteur est contrôlé par un composant distinct : `P
 
 Il vérifie à nouveau le plan obtenu à partir des positions, sans réutiliser l'état du moteur ni considérer que son résultat est correct.
 
-Les 16 contrôles portent sur :
+Les 17 contrôles portent sur :
 
 ```text
 conservation des quantités
@@ -598,6 +623,7 @@ support et stabilité
 gerbabilité
 niveaux de gerbage
 charge supportable
+charge supportable estimée (point d'attention)
 charge utile de chaque camion
 passage par la porte
 reliquat justifié
@@ -648,6 +674,7 @@ L'onglet **Détail du calcul** explique la solution affichée, étape par étape
 7. Placement des unités (moteur 3D)
 8. Choix de la solution
 9. Camion N : résultat chiffré          (un par camion)
+…  Positions des unités                  X, Y, Z, dimensions posées, niveau, charge portée, supports
 …  Reliquat
 …  Contrôles du plan
 …  Récapitulatif du calcul               toutes les opérations, numérotées
@@ -1055,7 +1082,7 @@ Les préférences sont enregistrées dans :
 %APPDATA%\OptiTunes\settings.json
 ```
 
-Elles comprennent le catalogue de véhicules, le véhicule par défaut, les options de calcul (support minimal, rotation au sol, tubes en quinconce, ordre de livraison, recherche approfondie, camions supplémentaires), les débords, le rechargement automatique et les fichiers récents.
+Elles comprennent le catalogue de véhicules, le véhicule par défaut, les options de calcul (support minimal, rotation au sol, gerbage sans charge renseignée, tubes en quinconce, ordre de livraison, recherche approfondie, camions supplémentaires), les débords, le rechargement automatique et les fichiers récents.
 
 La variable d'environnement `OPTITUNES_SETTINGS` permet d'utiliser un autre fichier (tests, poste partagé).
 
@@ -1333,21 +1360,32 @@ Le dépôt source n'a donc pas vocation à servir de procédure d'installation u
 ├── ordres légers d'abord si surcharge
 ├── classement : ordres complets avant métrage
 └── récapitulatif du calcul
+      │
+      ▼
+0.0.8
+│
+├── minimum de camions démontré
+├── sommes exactes / termes arrondis signalés
+├── ordres complets par camion
+├── charge supportable estimée signalée
+└── positions des unités dans le détail
 ```
 
 ---
 
-# 0.0.7
+# 0.0.8
 
-La version actuelle affine le moteur et termine l'explication du calcul.
+La version actuelle rend chaque chiffre vérifiable.
 
 ```text
-chaque camion        affiné après les 18 façons de charger
-chaque surcharge     traitée en chargeant le plus d'ordres complets
-chaque opération     récapitulée, numérotée, avec ses valeurs
+le nombre de camions      démontré par une borne basse, tous ordres confondus
+chaque somme              posée avec les valeurs exactes du fichier
+chaque camion             avec ses ordres entiers et ses ordres partagés
+chaque hypothèse          signalée (charge estimée, porte non contrôlée)
+chaque unité              avec sa position, pour refaire les contrôles
 ```
 
-Le résultat n'est jamais moins bon qu'avant, et le même fichier donne toujours le même plan.
+La 0.0.7 avait affiné le moteur (18 façons de charger puis affinage, ordres complets en cas de surcharge) et ajouté le récapitulatif de toutes les opérations.
 
 # Ce qui fait OptiTunes
 
